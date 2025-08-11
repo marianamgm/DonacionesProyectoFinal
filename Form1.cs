@@ -25,9 +25,9 @@ namespace DonacionesProyectoFinal
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (textUsu.Text.Trim().ToUpper() == "ADMIN")
+            if (textUsu.Text.Trim().ToUpper() == "MARIS")
             {
-                if (textCont.Text.Trim().ToUpper() == "1234")
+                if (textCont.Text.Trim().ToUpper() == "302510")
                 {
                     frmPaginaPrincipal principal = new frmPaginaPrincipal();
                     principal.Show();

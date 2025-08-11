@@ -121,7 +121,7 @@
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAATAAAAEACAYAAAA0gSpeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wQAADsEBuJFr7QAA/7JJREFUeF5k/WV4FdbWtoH2XN/3bqvgEHd3dyUeIAEixN2VuLt7iAcJBOJIgmud
+        vwAADr8BOAVTJAAA/7JJREFUeF5k/WV4FdbWtoH2XN/3bqvgEHd3dyUeIAEixN2VuLt7iAcJBOJIgmud
         UqOlUOqlCm3x0v2e3/e55ly0e3/X+TGvlRVZbSnrzjOe8YwxX9Ax3MhmL0MCvA1wttfB0lwbWwttPGx1
         8XfWJ9DFEB8nfbwdDfC2N8DFRh97S11szLVwsNTB2VIPR0tdrM21sDLTwNZCEzvxsakmFqbqWJhpYGmu
         haudEeH+TsRtcyM+1I32skSWRuuY7i6mp2gX3Xk76c7ZQWfmNnrzttNXGE5fcRTjdenM9pVypL+cvZ0V
@@ -3658,5 +3658,15 @@
         wx/oxz/6vv70R9/Tj3/4kf29c/7khx/qj3/wgf7o++/pRx991z7v/W9/Xd/6xtfsfPudt/Xdb39DH777
         Lf3gw3f1w4/etX8X/i6/99639YMPv6sfffSuHf6u/38mvm9NZPZgiQAAAABJRU5ErkJggg==
 </value>
+  </data>
+  <data name="label18.Text" xml:space="preserve">
+    <value>Detrás de cada mirada, hay una historia de lucha y 
+anhelo. Muchos perros en situación de calle, enfrentan
+ desafíos diarios para sobrevivir, encontraralimento y
+un lugarseguro. Tu apoyo les brinda no solo recursos,
+sino la tranquilidad de un techo y la oportunidad  de 
+construir un futuro digno. Con tu donación, garantizamos 
+que pueden acceder a alimentos, atención veterinaria, un
+ hogar seguro y lleno de cariño.</value>
   </data>
 </root>
