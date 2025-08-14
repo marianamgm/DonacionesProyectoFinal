@@ -82,25 +82,25 @@ namespace DonacionesProyectoFinal
 
         private void solicitarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           DMadresSolteras Dms = new DMadresSolteras();
+           DFRMmadressolteras Dms = new DFRMmadressolteras();
            Dms.Show();
         }
 
         private void solicitarToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            DAnimales danim = new DAnimales();
-            danim.Show();
+            DFRManimalescs animaa = new DFRManimalescs();
+            animaa.Show();
         }
 
         private void solicitarToolStripMenuItem2_Click(object sender, EventArgs e)
         {
-            DRefugios dref = new DRefugios();
+            DFRMrefugios dref = new DFRMrefugios();
             dref.Show();
         }
 
         private void solicitarToolStripMenuItem3_Click(object sender, EventArgs e)
         {
-            DPersonasSinHogar ddpersh = new DPersonasSinHogar();
+            DFRMpersonasinhogarcs ddpersh = new DFRMpersonasinhogarcs();
             ddpersh.Show();
         }
     }

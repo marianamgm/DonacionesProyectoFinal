@@ -58,6 +58,30 @@
     <Compile Include="DAnimales.Designer.cs">
       <DependentUpon>DAnimales.cs</DependentUpon>
     </Compile>
+    <Compile Include="DFRManimalescs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DFRManimalescs.Designer.cs">
+      <DependentUpon>DFRManimalescs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DFRMmadressolteras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DFRMmadressolteras.Designer.cs">
+      <DependentUpon>DFRMmadressolteras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DFRMpersonasinhogarcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DFRMpersonasinhogarcs.Designer.cs">
+      <DependentUpon>DFRMpersonasinhogarcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DFRMrefugios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DFRMrefugios.Designer.cs">
+      <DependentUpon>DFRMrefugios.cs</DependentUpon>
+    </Compile>
     <Compile Include="DMadresSolteras.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -185,6 +209,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DAnimales.resx">
       <DependentUpon>DAnimales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DFRManimalescs.resx">
+      <DependentUpon>DFRManimalescs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DFRMmadressolteras.resx">
+      <DependentUpon>DFRMmadressolteras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DFRMpersonasinhogarcs.resx">
+      <DependentUpon>DFRMpersonasinhogarcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DFRMrefugios.resx">
+      <DependentUpon>DFRMrefugios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DMadresSolteras.resx">
       <DependentUpon>DMadresSolteras.cs</DependentUpon>
