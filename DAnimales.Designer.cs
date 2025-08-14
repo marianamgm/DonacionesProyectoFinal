@@ -82,9 +82,9 @@
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(163, 73);
+            this.panel1.Location = new System.Drawing.Point(161, 73);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(475, 353);
+            this.panel1.Size = new System.Drawing.Size(500, 353);
             this.panel1.TabIndex = 21;
             // 
             // button4
@@ -130,7 +130,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(35, 10);
+            this.label8.Location = new System.Drawing.Point(36, 13);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(56, 16);
             this.label8.TabIndex = 41;
@@ -174,9 +174,9 @@
             // 
             this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.textBox5.ForeColor = System.Drawing.Color.DimGray;
-            this.textBox5.Location = new System.Drawing.Point(268, 158);
+            this.textBox5.Location = new System.Drawing.Point(232, 158);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(177, 22);
+            this.textBox5.Size = new System.Drawing.Size(242, 22);
             this.textBox5.TabIndex = 37;
             this.textBox5.Text = "Colobia/calle/número/cp";
             // 
@@ -186,7 +186,7 @@
             this.textBox4.ForeColor = System.Drawing.Color.DimGray;
             this.textBox4.Location = new System.Drawing.Point(35, 158);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(168, 22);
+            this.textBox4.Size = new System.Drawing.Size(191, 22);
             this.textBox4.TabIndex = 36;
             this.textBox4.Text = "Correo electrónico";
             // 
@@ -194,9 +194,9 @@
             // 
             this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.textBox3.ForeColor = System.Drawing.Color.DimGray;
-            this.textBox3.Location = new System.Drawing.Point(268, 93);
+            this.textBox3.Location = new System.Drawing.Point(249, 93);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(177, 22);
+            this.textBox3.Size = new System.Drawing.Size(225, 22);
             this.textBox3.TabIndex = 35;
             this.textBox3.Text = "10 digitos";
             // 
@@ -206,7 +206,7 @@
             this.textBox2.ForeColor = System.Drawing.Color.DimGray;
             this.textBox2.Location = new System.Drawing.Point(35, 94);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(168, 22);
+            this.textBox2.Size = new System.Drawing.Size(191, 22);
             this.textBox2.TabIndex = 34;
             this.textBox2.Text = "18 digitos";
             // 
@@ -216,7 +216,7 @@
             this.textBox1.ForeColor = System.Drawing.Color.DimGray;
             this.textBox1.Location = new System.Drawing.Point(35, 32);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(410, 22);
+            this.textBox1.Size = new System.Drawing.Size(439, 22);
             this.textBox1.TabIndex = 33;
             this.textBox1.Text = "Nombre completo";
             // 
@@ -241,7 +241,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(265, 74);
+            this.label4.Location = new System.Drawing.Point(246, 75);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(61, 16);
             this.label4.TabIndex = 30;

@@ -16,5 +16,10 @@ namespace DonacionesProyectoFinal
         {
             InitializeComponent();
         }
+
+        private void MSdoc_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -103,5 +103,22 @@ namespace DonacionesProyectoFinal
             DFRMpersonasinhogarcs ddpersh = new DFRMpersonasinhogarcs();
             ddpersh.Show();
         }
+
+        private void ayudaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void solicitudesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CategoriasRegistro solicitudesgention = new CategoriasRegistro();
+            solicitudesgention.Show();
+
+        }
+
+        private void salirToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

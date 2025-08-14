@@ -52,6 +52,15 @@
     <Compile Include="Adoc.Designer.cs">
       <DependentUpon>Adoc.cs</DependentUpon>
     </Compile>
+    <Compile Include="CategoriasRegistro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CategoriasRegistro.Designer.cs">
+      <DependentUpon>CategoriasRegistro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Solicitud.cs" />
+    <Compile Include="SolicitudesControlador.cs" />
+    <Compile Include="Conexion.cs" />
     <Compile Include="DAnimales.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,24 +120,6 @@
     </Compile>
     <Compile Include="DocumentacionRefugios.Designer.cs">
       <DependentUpon>DocumentacionRefugios.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DocumentoPersonasSinHogar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DocumentoPersonasSinHogar.Designer.cs">
-      <DependentUpon>DocumentoPersonasSinHogar.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DocumentosAnimales.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DocumentosAnimales.Designer.cs">
-      <DependentUpon>DocumentosAnimales.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DocumentosRefugios.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DocumentosRefugios.Designer.cs">
-      <DependentUpon>DocumentosRefugios.cs</DependentUpon>
     </Compile>
     <Compile Include="DPersonasSinHogar.cs">
       <SubType>Form</SubType>
@@ -207,6 +198,9 @@
     <EmbeddedResource Include="Adoc.resx">
       <DependentUpon>Adoc.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CategoriasRegistro.resx">
+      <DependentUpon>CategoriasRegistro.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DAnimales.resx">
       <DependentUpon>DAnimales.cs</DependentUpon>
     </EmbeddedResource>
@@ -236,15 +230,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DocumentacionRefugios.resx">
       <DependentUpon>DocumentacionRefugios.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DocumentoPersonasSinHogar.resx">
-      <DependentUpon>DocumentoPersonasSinHogar.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DocumentosAnimales.resx">
-      <DependentUpon>DocumentosAnimales.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DocumentosRefugios.resx">
-      <DependentUpon>DocumentosRefugios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DPersonasSinHogar.resx">
       <DependentUpon>DPersonasSinHogar.cs</DependentUpon>
@@ -310,6 +295,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Captura de pantalla 2025-08-13 114555.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Imagenes\eliminar.png" />
+    <Content Include="Imagenes\guardar.png" />
+    <Content Include="Imagenes\nuevo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

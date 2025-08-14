@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ejemploLogin;
 
 namespace DonacionesProyectoFinal
 {
@@ -19,13 +20,23 @@ namespace DonacionesProyectoFinal
 
         private void frmMadresSolteras_Load(object sender, EventArgs e)
         {
+        }
+
+        private void btnSolicitar_Click(object sender, EventArgs e)
+        {
 
         }
+            
+        
 
         private void button1_Click(object sender, EventArgs e)
         {
-            FormularioDonacionMadresSolteras fmadressoltera = new FormularioDonacionMadresSolteras();
-            fmadressoltera.Show();
+            FMadresSolteras madress = new FMadresSolteras();
+            madress.Show();
         }
+
+
+
     }
 }
+

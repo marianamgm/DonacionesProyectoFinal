@@ -277,6 +277,7 @@
             this.Name = "MSdoc";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MSdoc";
+            this.Load += new System.EventHandler(this.MSdoc_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();

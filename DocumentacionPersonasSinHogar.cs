@@ -24,8 +24,6 @@ namespace DonacionesProyectoFinal
 
         private void button5_Click(object sender, EventArgs e)
         {
-            DocumentoPersonasSinHogar docpsh = new DocumentoPersonasSinHogar();
-            docpsh.Show();
         }
     }
     }

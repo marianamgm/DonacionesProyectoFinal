@@ -24,8 +24,7 @@ namespace DonacionesProyectoFinal
 
         private void button5_Click(object sender, EventArgs e)
         {
-            DocumentosAnimales docanim = new DocumentosAnimales();
-            docanim.Show();
+            
         }
     }
     }
