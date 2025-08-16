@@ -8,7 +8,7 @@ namespace ejemploLogin
 {
     public partial class FMadresSolteras : Form
     {
-        SolicitudesControlador controlador = new SolicitudesControlador();
+        SolicitudControlador controlador = new SolicitudControlador();
 
         public FMadresSolteras()
         {
@@ -56,15 +56,15 @@ namespace ejemploLogin
 
             Solicitud solicitud = new Solicitud()
             {
-                UsuarioId = 1,
                 Categoria = "Madres Solteras",
                 Nombre = text_nombrems.Text,
                 Telefono = text_telms.Text,
                 Email = text_emailms.Text,
                 Domicilio = text_direccionms.Text,
-                Curp = text_curpms.Text,
+                CURP = text_curpms.Text,
                 Descripcion = text_desms.Text
             };
+        
 
 
             bool guardo = controlador.AgregarSolicitud(solicitud);
@@ -73,9 +73,20 @@ namespace ejemploLogin
             {
                 MessageBox.Show("Solicitud enviada correctamente.");
                 Limpiar();
+                this.Close();
             }
             else
                 MessageBox.Show("No se pudo enviar la solicitud.");
+        }
+
+        private void FMadresSolteras_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSiguiente_Click(object sender, EventArgs e)
+        {
+            Limpiar();
         }
     }
     }

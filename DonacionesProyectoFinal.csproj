@@ -59,7 +59,7 @@
       <DependentUpon>CategoriasRegistro.cs</DependentUpon>
     </Compile>
     <Compile Include="Solicitud.cs" />
-    <Compile Include="SolicitudesControlador.cs" />
+    <Compile Include="SolicitudControlador.cs" />
     <Compile Include="Conexion.cs" />
     <Compile Include="DAnimales.cs">
       <SubType>Form</SubType>

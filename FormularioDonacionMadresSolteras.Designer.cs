@@ -30,7 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnSiguiente = new System.Windows.Forms.Button();
+            this.btnNuev = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
@@ -65,7 +65,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.btnSiguiente);
+            this.panel1.Controls.Add(this.btnNuev);
             this.panel1.Controls.Add(this.btnGuardar);
             this.panel1.Controls.Add(this.btnSalir);
             this.panel1.Controls.Add(this.label8);
@@ -86,18 +86,19 @@
             this.panel1.Size = new System.Drawing.Size(475, 353);
             this.panel1.TabIndex = 15;
             // 
-            // btnSiguiente
+            // btnNuev
             // 
-            this.btnSiguiente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.btnSiguiente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSiguiente.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSiguiente.ForeColor = System.Drawing.Color.White;
-            this.btnSiguiente.Location = new System.Drawing.Point(348, 293);
-            this.btnSiguiente.Name = "btnSiguiente";
-            this.btnSiguiente.Size = new System.Drawing.Size(96, 35);
-            this.btnSiguiente.TabIndex = 17;
-            this.btnSiguiente.Text = "Siguiente";
-            this.btnSiguiente.UseVisualStyleBackColor = false;
+            this.btnNuev.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btnNuev.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNuev.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNuev.ForeColor = System.Drawing.Color.White;
+            this.btnNuev.Location = new System.Drawing.Point(348, 293);
+            this.btnNuev.Name = "btnNuev";
+            this.btnNuev.Size = new System.Drawing.Size(96, 35);
+            this.btnNuev.TabIndex = 17;
+            this.btnNuev.Text = "Nuevo";
+            this.btnNuev.UseVisualStyleBackColor = false;
+            this.btnNuev.Click += new System.EventHandler(this.btnSiguiente_Click);
             // 
             // btnGuardar
             // 
@@ -277,6 +278,7 @@
             this.Name = "FMadresSolteras";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormularioDonacionMadresSolteras";
+            this.Load += new System.EventHandler(this.FMadresSolteras_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -304,6 +306,6 @@
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button btnSiguiente;
+        private System.Windows.Forms.Button btnNuev;
     }
 }

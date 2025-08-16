@@ -34,32 +34,24 @@
             this.btnGuardar = new System.Windows.Forms.ToolStripButton();
             this.btnEliminar = new System.Windows.Forms.ToolStripButton();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cs_categoria = new System.Windows.Forms.TextBox();
+            this.cs_direccion = new System.Windows.Forms.TextBox();
+            this.cs_descripcion = new System.Windows.Forms.TextBox();
+            this.cs_telefono = new System.Windows.Forms.TextBox();
+            this.cs_curp = new System.Windows.Forms.TextBox();
+            this.cs_email = new System.Windows.Forms.TextBox();
+            this.cs_nombre = new System.Windows.Forms.TextBox();
+            this.cs_id = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnSalir = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.cs_id = new System.Windows.Forms.TextBox();
-            this.cs_nombre = new System.Windows.Forms.TextBox();
-            this.cs_email = new System.Windows.Forms.TextBox();
-            this.cs_curp = new System.Windows.Forms.TextBox();
-            this.cs_telefono = new System.Windows.Forms.TextBox();
-            this.cs_descripcion = new System.Windows.Forms.TextBox();
-            this.cs_direccion = new System.Windows.Forms.TextBox();
-            this.cs_categoria = new System.Windows.Forms.TextBox();
-            this.cs_producto = new System.Windows.Forms.TextBox();
-            this.cs_tipo = new System.Windows.Forms.TextBox();
-            this.cs_detalle = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.cs_fecha = new System.Windows.Forms.TextBox();
             this.Grid = new System.Windows.Forms.DataGridView();
             this.id_solicitud = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -99,6 +91,7 @@
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(76, 24);
             this.btnNuevo.Text = "Nuevo";
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // btnGuardar
             // 
@@ -107,6 +100,7 @@
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(86, 24);
             this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnEliminar
             // 
@@ -115,17 +109,12 @@
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(87, 24);
             this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Silver;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.cs_fecha);
-            this.panel1.Controls.Add(this.label12);
-            this.panel1.Controls.Add(this.label11);
-            this.panel1.Controls.Add(this.cs_detalle);
-            this.panel1.Controls.Add(this.cs_tipo);
-            this.panel1.Controls.Add(this.cs_producto);
             this.panel1.Controls.Add(this.cs_categoria);
             this.panel1.Controls.Add(this.cs_direccion);
             this.panel1.Controls.Add(this.cs_descripcion);
@@ -135,8 +124,6 @@
             this.panel1.Controls.Add(this.cs_nombre);
             this.panel1.Controls.Add(this.cs_id);
             this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label5);
@@ -146,15 +133,143 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(23, 51);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(763, 220);
+            this.panel1.Size = new System.Drawing.Size(763, 168);
             this.panel1.TabIndex = 1;
+            // 
+            // cs_categoria
+            // 
+            this.cs_categoria.Location = new System.Drawing.Point(499, 78);
+            this.cs_categoria.Name = "cs_categoria";
+            this.cs_categoria.Size = new System.Drawing.Size(170, 22);
+            this.cs_categoria.TabIndex = 17;
+            // 
+            // cs_direccion
+            // 
+            this.cs_direccion.Location = new System.Drawing.Point(499, 47);
+            this.cs_direccion.Name = "cs_direccion";
+            this.cs_direccion.Size = new System.Drawing.Size(170, 22);
+            this.cs_direccion.TabIndex = 16;
+            // 
+            // cs_descripcion
+            // 
+            this.cs_descripcion.Location = new System.Drawing.Point(499, 16);
+            this.cs_descripcion.Name = "cs_descripcion";
+            this.cs_descripcion.Size = new System.Drawing.Size(224, 22);
+            this.cs_descripcion.TabIndex = 15;
+            // 
+            // cs_telefono
+            // 
+            this.cs_telefono.Location = new System.Drawing.Point(499, 106);
+            this.cs_telefono.Name = "cs_telefono";
+            this.cs_telefono.Size = new System.Drawing.Size(170, 22);
+            this.cs_telefono.TabIndex = 14;
+            // 
+            // cs_curp
+            // 
+            this.cs_curp.Location = new System.Drawing.Point(97, 112);
+            this.cs_curp.Name = "cs_curp";
+            this.cs_curp.Size = new System.Drawing.Size(242, 22);
+            this.cs_curp.TabIndex = 13;
+            // 
+            // cs_email
+            // 
+            this.cs_email.Location = new System.Drawing.Point(97, 81);
+            this.cs_email.Name = "cs_email";
+            this.cs_email.Size = new System.Drawing.Size(237, 22);
+            this.cs_email.TabIndex = 12;
+            // 
+            // cs_nombre
+            // 
+            this.cs_nombre.Location = new System.Drawing.Point(97, 50);
+            this.cs_nombre.Name = "cs_nombre";
+            this.cs_nombre.Size = new System.Drawing.Size(263, 22);
+            this.cs_nombre.TabIndex = 11;
+            // 
+            // cs_id
+            // 
+            this.cs_id.Location = new System.Drawing.Point(97, 19);
+            this.cs_id.Name = "cs_id";
+            this.cs_id.Size = new System.Drawing.Size(170, 22);
+            this.cs_id.TabIndex = 10;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(411, 80);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(69, 16);
+            this.label10.TabIndex = 9;
+            this.label10.Text = "Categoria:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(398, 19);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(82, 16);
+            this.label7.TabIndex = 6;
+            this.label7.Text = "Descripción:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(413, 50);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(67, 16);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "Dirección:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(421, 109);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(64, 16);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Telefono:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(35, 112);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(48, 16);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "CURP:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(39, 80);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(44, 16);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Email:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(60, 16);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(23, 16);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "ID:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(24, 48);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(59, 16);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Nombre:";
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Silver;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.btnSalir);
-            this.panel2.Location = new System.Drawing.Point(23, 492);
+            this.panel2.Location = new System.Drawing.Point(23, 440);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(763, 44);
             this.panel2.TabIndex = 2;
@@ -170,198 +285,6 @@
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(24, 48);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 16);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Nombre:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(60, 16);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(23, 16);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "ID:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(39, 80);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(44, 16);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Email:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(35, 112);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(48, 16);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "CURP:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(19, 144);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(64, 16);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Telefono:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(413, 50);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(67, 16);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Dirección:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(398, 19);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(82, 16);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Descripción:";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(416, 109);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(64, 16);
-            this.label8.TabIndex = 7;
-            this.label8.Text = "Producto:";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(442, 141);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(38, 16);
-            this.label9.TabIndex = 8;
-            this.label9.Text = "Tipo:";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(411, 80);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(69, 16);
-            this.label10.TabIndex = 9;
-            this.label10.Text = "Categoria:";
-            // 
-            // cs_id
-            // 
-            this.cs_id.Location = new System.Drawing.Point(97, 19);
-            this.cs_id.Name = "cs_id";
-            this.cs_id.Size = new System.Drawing.Size(170, 22);
-            this.cs_id.TabIndex = 10;
-            // 
-            // cs_nombre
-            // 
-            this.cs_nombre.Location = new System.Drawing.Point(97, 50);
-            this.cs_nombre.Name = "cs_nombre";
-            this.cs_nombre.Size = new System.Drawing.Size(263, 22);
-            this.cs_nombre.TabIndex = 11;
-            // 
-            // cs_email
-            // 
-            this.cs_email.Location = new System.Drawing.Point(97, 81);
-            this.cs_email.Name = "cs_email";
-            this.cs_email.Size = new System.Drawing.Size(237, 22);
-            this.cs_email.TabIndex = 12;
-            // 
-            // cs_curp
-            // 
-            this.cs_curp.Location = new System.Drawing.Point(97, 112);
-            this.cs_curp.Name = "cs_curp";
-            this.cs_curp.Size = new System.Drawing.Size(242, 22);
-            this.cs_curp.TabIndex = 13;
-            // 
-            // cs_telefono
-            // 
-            this.cs_telefono.Location = new System.Drawing.Point(97, 141);
-            this.cs_telefono.Name = "cs_telefono";
-            this.cs_telefono.Size = new System.Drawing.Size(170, 22);
-            this.cs_telefono.TabIndex = 14;
-            // 
-            // cs_descripcion
-            // 
-            this.cs_descripcion.Location = new System.Drawing.Point(499, 16);
-            this.cs_descripcion.Name = "cs_descripcion";
-            this.cs_descripcion.Size = new System.Drawing.Size(224, 22);
-            this.cs_descripcion.TabIndex = 15;
-            // 
-            // cs_direccion
-            // 
-            this.cs_direccion.Location = new System.Drawing.Point(499, 47);
-            this.cs_direccion.Name = "cs_direccion";
-            this.cs_direccion.Size = new System.Drawing.Size(170, 22);
-            this.cs_direccion.TabIndex = 16;
-            // 
-            // cs_categoria
-            // 
-            this.cs_categoria.Location = new System.Drawing.Point(499, 78);
-            this.cs_categoria.Name = "cs_categoria";
-            this.cs_categoria.Size = new System.Drawing.Size(170, 22);
-            this.cs_categoria.TabIndex = 17;
-            // 
-            // cs_producto
-            // 
-            this.cs_producto.Location = new System.Drawing.Point(499, 109);
-            this.cs_producto.Name = "cs_producto";
-            this.cs_producto.Size = new System.Drawing.Size(170, 22);
-            this.cs_producto.TabIndex = 18;
-            // 
-            // cs_tipo
-            // 
-            this.cs_tipo.Location = new System.Drawing.Point(499, 137);
-            this.cs_tipo.Name = "cs_tipo";
-            this.cs_tipo.Size = new System.Drawing.Size(170, 22);
-            this.cs_tipo.TabIndex = 19;
-            // 
-            // cs_detalle
-            // 
-            this.cs_detalle.Location = new System.Drawing.Point(499, 170);
-            this.cs_detalle.Name = "cs_detalle";
-            this.cs_detalle.Size = new System.Drawing.Size(186, 22);
-            this.cs_detalle.TabIndex = 20;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(35, 176);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(48, 16);
-            this.label11.TabIndex = 21;
-            this.label11.Text = "Fecha:";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(427, 173);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(53, 16);
-            this.label12.TabIndex = 22;
-            this.label12.Text = "Detalle:";
-            // 
-            // cs_fecha
-            // 
-            this.cs_fecha.Location = new System.Drawing.Point(97, 173);
-            this.cs_fecha.Name = "cs_fecha";
-            this.cs_fecha.Size = new System.Drawing.Size(170, 22);
-            this.cs_fecha.TabIndex = 23;
             // 
             // Grid
             // 
@@ -382,7 +305,7 @@
             this.id_producto,
             this.tipo_usuario,
             this.cantidad});
-            this.Grid.Location = new System.Drawing.Point(23, 277);
+            this.Grid.Location = new System.Drawing.Point(23, 225);
             this.Grid.Name = "Grid";
             this.Grid.RowHeadersVisible = false;
             this.Grid.RowHeadersWidth = 51;
@@ -391,6 +314,7 @@
             this.Grid.Size = new System.Drawing.Size(763, 209);
             this.Grid.TabIndex = 3;
             this.Grid.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Grid_CellClick);
+            this.Grid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Grid_CellContentClick);
             // 
             // id_solicitud
             // 
@@ -492,7 +416,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(811, 548);
+            this.ClientSize = new System.Drawing.Size(811, 501);
             this.ControlBox = false;
             this.Controls.Add(this.Grid);
             this.Controls.Add(this.panel2);
@@ -531,12 +455,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox cs_detalle;
-        private System.Windows.Forms.TextBox cs_tipo;
-        private System.Windows.Forms.TextBox cs_producto;
         private System.Windows.Forms.TextBox cs_categoria;
         private System.Windows.Forms.TextBox cs_direccion;
         private System.Windows.Forms.TextBox cs_descripcion;
@@ -545,8 +463,6 @@
         private System.Windows.Forms.TextBox cs_email;
         private System.Windows.Forms.TextBox cs_nombre;
         private System.Windows.Forms.TextBox cs_id;
-        private System.Windows.Forms.TextBox cs_fecha;
-        private System.Windows.Forms.Label label12;
         private System.Windows.Forms.DataGridView Grid;
         private System.Windows.Forms.DataGridViewTextBoxColumn id_solicitud;
         private System.Windows.Forms.DataGridViewTextBoxColumn nombre;

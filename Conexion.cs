@@ -9,6 +9,6 @@ namespace DonacionesProyectoFinal
 {
     internal class Conexion
     {
-        public static string strConexion = "workstation id=BDDonacionesSolidaridad.mssql.somee.com;packet size = 4096; user id = YamiOs_SQLLogin_1; pwd=loebqsyiq6;data source = BDDonacionesSolidaridad.mssql.somee.com; persist security info=False;initial catalog = BDDonacionesSolidaridad; TrustServerCertificate=True";
+        public static string strConexion = "Data Source=MARIS30;Initial Catalog=DONACIONPAGINA;Integrated Security=True;";
     }
 }
