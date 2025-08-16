@@ -1,64 +1,40 @@
 ﻿using System;
-using System.Data;
-using System.Data.SqlClient;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-internal class Solicitud
+namespace DonacionesProyectoFinal
 {
-    private int solicitud_id;
-    private int usuario_id;
-    private string nombre;
-    private string categoria;
-    private string telefono;
-    private string email;
-    private string domicilio;
-    private string curp;
-    private string descripcion;
-    private int id_producto;
-    private string nombre_producto;
-    private int id_categoria;
-    private string nombre_categoria;
-
-    // Constructor vacío
-    public Solicitud() { }
-
-    // Constructor para nombre
-    public Solicitud(string nombre)
+    internal class Solicitud
     {
-        this.nombre = nombre;
-    }
+        private int Sol_Solicitud_Id;
+        private string Sol_Nombre;
+        private string Sol_CURP;
+        private string Sol_Telefono;
+        private string Sol_Email;
+        private string Sol_Domicilio;
+        private string Sol_Descripcion;
+        private string Sol_Categoria;
 
-    // Constructor para producto-categoría
-    public Solicitud(int id_producto, string nombre_producto, int id_categoria, string nombre_categoria)
-    {
-        this.id_producto = id_producto;
-        this.nombre_producto = nombre_producto;
-        this.id_categoria = id_categoria;
-        this.nombre_categoria = nombre_categoria;
-    }
+        public Solicitud(int sol_Solicitud_Id, string sol_Nombre, string sol_CURP, string sol_Telefono, string sol_Email, string sol_Domicilio, string sol_Descripcion)
+        {
+            this.Sol_Solicitud_Id = sol_Solicitud_Id;
+            this.Sol_Nombre = sol_Nombre;
+            this.Sol_CURP = sol_CURP;
+            this.Sol_Telefono = sol_Telefono;
+            this.Sol_Email = sol_Email;
+            this.Sol_Domicilio = sol_Domicilio;
+            this.Sol_Descripcion = sol_Descripcion;
+        }
 
-    // Constructor completo
-    public Solicitud(int solicitud_id, int usuario_id, string nombre, string categoria, string telefono, string email, string domicilio, string curp, string descripcion)
-    {
-        this.solicitud_id = solicitud_id;
-        this.usuario_id = usuario_id;
-        this.nombre = nombre;
-        this.categoria = categoria;
-        this.telefono = telefono;
-        this.email = email;
-        this.domicilio = domicilio;
-        this.curp = curp;
-        this.descripcion = descripcion;
+        public int Sol_Solicitud_Id1 { get => Sol_Solicitud_Id; set => Sol_Solicitud_Id = value; }
+        public string Sol_Nombre1 { get => Sol_Nombre; set => Sol_Nombre = value; }
+        public string Sol_CURP1 { get => Sol_CURP; set => Sol_CURP = value; }
+        public string Sol_Telefono1 { get => Sol_Telefono; set => Sol_Telefono = value; }
+        public string Sol_Email1 { get => Sol_Email; set => Sol_Email = value; }
+        public string Sol_Domicilio1 { get => Sol_Domicilio; set => Sol_Domicilio = value; }
+        public string Sol_Descripcion1 { get => Sol_Descripcion; set => Sol_Descripcion = value; }
+        public string Sol_Categoria1 { get => Sol_Categoria; set => Sol_Categoria = value; }
     }
-
-    // Propiedades
-    public int SolicitudId { get => solicitud_id; set => solicitud_id = value; }
-    public int UsuarioId { get => usuario_id; set => usuario_id = value; }
-    public string Nombre { get => nombre; set => nombre = value; }
-    public string Categoria { get => categoria; set => categoria = value; }
-    public string Telefono { get => telefono; set => telefono = value; }
-    public string Email { get => email; set => email = value; }
-    public string Domicilio { get => domicilio; set => domicilio = value; }
-    public string Curp { get => curp; set => curp = value; }
-    public string Descripcion { get => descripcion; set => descripcion = value; }
 }
