@@ -11,7 +11,7 @@ namespace DonacionesProyectoFinal
 {
     internal class SDonacionControlador
     {
-        public bool AgregarDonacion(DonacionesMS donaciones)
+        public bool AgregarDonacion(Donaciones donaciones)
         {
             try
             {
@@ -41,7 +41,7 @@ namespace DonacionesProyectoFinal
             }
         }
 
-        public bool ActualizarDonacion(DonacionesMS donaciones)
+        public bool ActualizarDonacion(Donaciones donaciones)
         {
             try
             {
@@ -93,9 +93,9 @@ namespace DonacionesProyectoFinal
             }
         }
 
-        public List<DonacionesMS> ListarDonacion()
+        public List<Donaciones> ListarDonacion()
         {
-            List<DonacionesMS> lista = new List<DonacionesMS>();
+            List<Donaciones> lista = new List<Donaciones>();
             try
             {
                 using (SqlConnection conn = new SqlConnection(Conexion.strConexion))
@@ -110,7 +110,7 @@ namespace DonacionesProyectoFinal
 
                     foreach (DataRow row in datos.Rows)
                     {
-                        lista.Add(new DonacionesMS
+                        lista.Add(new Donaciones
                         {
                             dId = Convert.ToInt32(row["dId"]),
                             dNombre = row["dNombre"].ToString(),

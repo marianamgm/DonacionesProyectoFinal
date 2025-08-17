@@ -118,20 +118,21 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="label18.Text" xml:space="preserve">
-    <value>Detrás de cada mirada, hay una historia de lucha y 
-anhelo. Muchos perros en situación de calle, enfrentan
- desafíos diarios para sobrevivir, encontraralimento y
-un lugarseguro. Tu apoyo les brinda no solo recursos,
-sino la tranquilidad de un techo y la oportunidad  de 
-construir un futuro digno. Con tu donación, garantizamos 
-que pueden acceder a alimentos, atención veterinaria, un
- hogar seguro y lleno de cariño.</value>
+    <value>Detrás de cada mirada hay una historia de lucha, pérdida y 
+esperanza. Las personas en situación de calle enfrentan 
+diariamente el frío, el hambre y la incertidumbre de no 
+tener un lugar donde refugiarse. Tu apoyo no solo significa
+ un techo o una comida caliente, sino también la oportunidad 
+de recuperar la dignidad y construir un nuevo comienzo. 
+Con tu donación, podemos brindar albergue, ropa, alimentos
+ y atención necesaria para que más personas tengan un futuro
+ lleno de seguridad y esperanza.</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAATgAAAEHCAYAAAA6U1oSAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wQAADsEBuJFr7QAA/7JJREFUeF6M/XV0FWb6tg331xYNxN3d3d3dfcfd3RMSgiVAnGBBAgQLrkVK8ZYi
+        wAAADsABataJCQAA/7JJREFUeF6M/XV0FWb6tg331xYNxN3d3d3dfcfd3RMSgiVAnGBBAgQLrkVK8ZYi
         pUq9M+341Gg7M7/nXe+/x7fueyctM8+8a31/3Gsre29IOPYl53VeL63r66K3o5m66lLKivPJz80mKTGe
         qMhwoiIj5GV0VATpaSnkK3LIy80iMz2Z+PhooqMjiI2OJDoygogI8fxwoqLCiYwMJyIygkh5XwQJCbEU
         FuRQVVGMIjeLrKw0srLSSUlNITk5maTEJOLjE0hOTCI3I4vyvALqC4upKyikSpFHS2EhQ/V1NOYrSIqN

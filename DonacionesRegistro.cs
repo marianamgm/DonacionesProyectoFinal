@@ -33,11 +33,13 @@ namespace DonacionesProyectoFinal
             cd_curp.Text = "";
             cd_direccion.Text = "";
             cd_direccion.Text = "";
+            cd_categoria.Text = "";
+            cd_descripcion.Text = "";
             cd_id.Focus();
         }
         void llenarGrid()
         {
-            List<DonacionesMS> donaciones = controlado.ListarDonacion();
+            List<Donaciones> donaciones = controlado.ListarDonacion();
             GridD.DataSource = donaciones;
         }
 
@@ -85,7 +87,7 @@ namespace DonacionesProyectoFinal
         {
             int id = string.IsNullOrEmpty(cd_id.Text) ? 0 : Convert.ToInt32(cd_id.Text);
 
-            DonacionesMS donaciones = new DonacionesMS(
+            Donaciones donaciones = new Donaciones(
                 id,
                 cd_nombre.Text,
                 cd_curp.Text,

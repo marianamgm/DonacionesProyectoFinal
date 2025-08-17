@@ -42,7 +42,7 @@ namespace DonacionesProyectoFinal
                 return;
             }
 
-            DonacionesMS donaciones = new DonacionesMS()
+            Donaciones donaciones = new Donaciones()
             {
                 dCategoria = "Madres Solteras",
                 dNombre = tnombrems.Text,

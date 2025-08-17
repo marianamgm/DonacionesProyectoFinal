@@ -22,5 +22,10 @@ namespace DonacionesProyectoFinal
             DMadresSolteras formmadress = new DMadresSolteras();
             formmadress.Show();
         }
+
+        private void DFRMmadressolteras_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

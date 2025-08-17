@@ -19,8 +19,8 @@ namespace DonacionesProyectoFinal
 
         private void button1_Click(object sender, EventArgs e)
         {
-            DRefugios drefug = new DRefugios();
-            drefug.Show();
+            Rdoc rdoc = new Rdoc();
+            rdoc.Show();
 
 
         }

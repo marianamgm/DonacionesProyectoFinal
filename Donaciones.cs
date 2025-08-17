@@ -8,7 +8,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace DonacionesProyectoFinal
 {
-    internal class DonacionesMS
+    internal class Donaciones
     {
         // Propiedades
         public int dId { get; set; }
@@ -21,12 +21,12 @@ namespace DonacionesProyectoFinal
         public string dCategoria { get; set; }
 
         // Constructor vacío
-        public DonacionesMS()
+        public Donaciones()
         {
         }
 
         // Constructor con parámetros
-        public DonacionesMS(int id, string nombre, string curp, string telefono, string email, string direccion, string descripcion, string categoria)
+        public Donaciones(int id, string nombre, string curp, string telefono, string email, string direccion, string descripcion, string categoria)
         {
             dId = id;
             dNombre = nombre;

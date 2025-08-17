@@ -58,7 +58,8 @@
     <Compile Include="CategoriasRegistro.Designer.cs">
       <DependentUpon>CategoriasRegistro.cs</DependentUpon>
     </Compile>
-    <Compile Include="DonacionesMS.cs" />
+    <Compile Include="SAnimalesControlador.cs" />
+    <Compile Include="Donaciones.cs" />
     <Compile Include="SDonacionControlador.cs" />
     <Compile Include="DonacionesRegistro.cs">
       <SubType>Form</SubType>
@@ -105,18 +106,6 @@
     <Compile Include="DMadresSolteras.Designer.cs">
       <DependentUpon>DMadresSolteras.cs</DependentUpon>
     </Compile>
-    <Compile Include="DocumentacionAnimales.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DocumentacionAnimales.Designer.cs">
-      <DependentUpon>DocumentacionAnimales.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DocumentacionMadresSolteras.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DocumentacionMadresSolteras.Designer.cs">
-      <DependentUpon>DocumentacionMadresSolteras.cs</DependentUpon>
-    </Compile>
     <Compile Include="DocumentacionPersonasSinHogar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,12 +117,6 @@
     </Compile>
     <Compile Include="DocumentacionRefugios.Designer.cs">
       <DependentUpon>DocumentacionRefugios.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DPersonasSinHogar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DPersonasSinHogar.Designer.cs">
-      <DependentUpon>DPersonasSinHogar.cs</DependentUpon>
     </Compile>
     <Compile Include="DRefugios.cs">
       <SubType>Form</SubType>
@@ -227,12 +210,6 @@
     <EmbeddedResource Include="DMadresSolteras.resx">
       <DependentUpon>DMadresSolteras.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DocumentacionAnimales.resx">
-      <DependentUpon>DocumentacionAnimales.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DocumentacionMadresSolteras.resx">
-      <DependentUpon>DocumentacionMadresSolteras.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="DocumentacionPersonasSinHogar.resx">
       <DependentUpon>DocumentacionPersonasSinHogar.cs</DependentUpon>
     </EmbeddedResource>
@@ -241,9 +218,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DonacionesRegistro.resx">
       <DependentUpon>DonacionesRegistro.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DPersonasSinHogar.resx">
-      <DependentUpon>DPersonasSinHogar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DRefugios.resx">
       <DependentUpon>DRefugios.cs</DependentUpon>

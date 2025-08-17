@@ -31,17 +31,16 @@
             this.label9 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnNuevo = new System.Windows.Forms.Button();
+            this.btnSalir = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.dadescripcion = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.dadireccion = new System.Windows.Forms.TextBox();
+            this.daemail = new System.Windows.Forms.TextBox();
+            this.datelefono = new System.Windows.Forms.TextBox();
+            this.dacurp = new System.Windows.Forms.TextBox();
+            this.danombre = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -66,17 +65,16 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.btnNuevo);
+            this.panel1.Controls.Add(this.btnSalir);
             this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.textBox6);
+            this.panel1.Controls.Add(this.dadescripcion);
             this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.textBox5);
-            this.panel1.Controls.Add(this.textBox4);
-            this.panel1.Controls.Add(this.textBox3);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.dadireccion);
+            this.panel1.Controls.Add(this.daemail);
+            this.panel1.Controls.Add(this.datelefono);
+            this.panel1.Controls.Add(this.dacurp);
+            this.panel1.Controls.Add(this.danombre);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
@@ -93,38 +91,41 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button4.Location = new System.Drawing.Point(20, 296);
+            this.button4.Location = new System.Drawing.Point(72, 296);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(99, 33);
             this.button4.TabIndex = 44;
             this.button4.Text = "Guardar";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // button3
+            // btnNuevo
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button3.Location = new System.Drawing.Point(125, 296);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(99, 33);
-            this.button3.TabIndex = 43;
-            this.button3.Text = "Borrar";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnNuevo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNuevo.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNuevo.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnNuevo.Location = new System.Drawing.Point(192, 296);
+            this.btnNuevo.Name = "btnNuevo";
+            this.btnNuevo.Size = new System.Drawing.Size(99, 33);
+            this.btnNuevo.TabIndex = 43;
+            this.btnNuevo.Text = "Nuevo";
+            this.btnNuevo.UseVisualStyleBackColor = false;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
-            // button1
+            // btnSalir
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1.Location = new System.Drawing.Point(232, 296);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(99, 33);
-            this.button1.TabIndex = 42;
-            this.button1.Text = "Editar";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalir.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnSalir.Location = new System.Drawing.Point(316, 296);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(99, 33);
+            this.btnSalir.TabIndex = 42;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // label8
             // 
@@ -136,30 +137,16 @@
             this.label8.TabIndex = 41;
             this.label8.Text = "Nombre";
             // 
-            // button2
+            // dadescripcion
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button2.Location = new System.Drawing.Point(337, 296);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(99, 33);
-            this.button2.TabIndex = 40;
-            this.button2.Text = "Enviar";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // textBox6
-            // 
-            this.textBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox6.ForeColor = System.Drawing.Color.DimGray;
-            this.textBox6.Location = new System.Drawing.Point(35, 215);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(410, 50);
-            this.textBox6.TabIndex = 39;
-            this.textBox6.Text = "Escribe tu mensaje aquí...";
+            this.dadescripcion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dadescripcion.ForeColor = System.Drawing.Color.DimGray;
+            this.dadescripcion.Location = new System.Drawing.Point(35, 215);
+            this.dadescripcion.Multiline = true;
+            this.dadescripcion.Name = "dadescripcion";
+            this.dadescripcion.Size = new System.Drawing.Size(410, 50);
+            this.dadescripcion.TabIndex = 39;
+            this.dadescripcion.Text = "Escribe tu mensaje aquí...";
             // 
             // label7
             // 
@@ -170,55 +157,56 @@
             this.label7.TabIndex = 38;
             this.label7.Text = "¿Por qué decidiste donar? (opcional)";
             // 
-            // textBox5
+            // dadireccion
             // 
-            this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox5.ForeColor = System.Drawing.Color.DimGray;
-            this.textBox5.Location = new System.Drawing.Point(232, 158);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(242, 22);
-            this.textBox5.TabIndex = 37;
-            this.textBox5.Text = "Colobia/calle/número/cp";
+            this.dadireccion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dadireccion.ForeColor = System.Drawing.Color.DimGray;
+            this.dadireccion.Location = new System.Drawing.Point(257, 158);
+            this.dadireccion.Multiline = true;
+            this.dadireccion.Name = "dadireccion";
+            this.dadireccion.Size = new System.Drawing.Size(217, 35);
+            this.dadireccion.TabIndex = 37;
+            this.dadireccion.Text = "Colobia/calle/número/cp";
             // 
-            // textBox4
+            // daemail
             // 
-            this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox4.ForeColor = System.Drawing.Color.DimGray;
-            this.textBox4.Location = new System.Drawing.Point(35, 158);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(191, 22);
-            this.textBox4.TabIndex = 36;
-            this.textBox4.Text = "Correo electrónico";
+            this.daemail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.daemail.ForeColor = System.Drawing.Color.DimGray;
+            this.daemail.Location = new System.Drawing.Point(35, 158);
+            this.daemail.Name = "daemail";
+            this.daemail.Size = new System.Drawing.Size(191, 22);
+            this.daemail.TabIndex = 36;
+            this.daemail.Text = "Correo electrónico";
             // 
-            // textBox3
+            // datelefono
             // 
-            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox3.ForeColor = System.Drawing.Color.DimGray;
-            this.textBox3.Location = new System.Drawing.Point(249, 93);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(225, 22);
-            this.textBox3.TabIndex = 35;
-            this.textBox3.Text = "10 digitos";
+            this.datelefono.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.datelefono.ForeColor = System.Drawing.Color.DimGray;
+            this.datelefono.Location = new System.Drawing.Point(249, 93);
+            this.datelefono.Name = "datelefono";
+            this.datelefono.Size = new System.Drawing.Size(225, 22);
+            this.datelefono.TabIndex = 35;
+            this.datelefono.Text = "10 digitos";
             // 
-            // textBox2
+            // dacurp
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox2.ForeColor = System.Drawing.Color.DimGray;
-            this.textBox2.Location = new System.Drawing.Point(35, 94);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(191, 22);
-            this.textBox2.TabIndex = 34;
-            this.textBox2.Text = "18 digitos";
+            this.dacurp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dacurp.ForeColor = System.Drawing.Color.DimGray;
+            this.dacurp.Location = new System.Drawing.Point(35, 94);
+            this.dacurp.Name = "dacurp";
+            this.dacurp.Size = new System.Drawing.Size(191, 22);
+            this.dacurp.TabIndex = 34;
+            this.dacurp.Text = "18 digitos";
             // 
-            // textBox1
+            // danombre
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox1.ForeColor = System.Drawing.Color.DimGray;
-            this.textBox1.Location = new System.Drawing.Point(35, 32);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(439, 22);
-            this.textBox1.TabIndex = 33;
-            this.textBox1.Text = "Nombre completo";
+            this.danombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.danombre.ForeColor = System.Drawing.Color.DimGray;
+            this.danombre.Location = new System.Drawing.Point(35, 32);
+            this.danombre.Name = "danombre";
+            this.danombre.Size = new System.Drawing.Size(439, 22);
+            this.danombre.TabIndex = 33;
+            this.danombre.Text = "Nombre completo";
             // 
             // label6
             // 
@@ -288,6 +276,7 @@
             this.Name = "DAnimales";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DAnimales";
+            this.Load += new System.EventHandler(this.DAnimales_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -300,17 +289,16 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnNuevo;
+        private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox dadescripcion;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox dadireccion;
+        private System.Windows.Forms.TextBox daemail;
+        private System.Windows.Forms.TextBox datelefono;
+        private System.Windows.Forms.TextBox dacurp;
+        private System.Windows.Forms.TextBox danombre;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;

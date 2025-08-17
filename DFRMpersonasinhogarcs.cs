@@ -19,8 +19,8 @@ namespace DonacionesProyectoFinal
 
         private void button1_Click(object sender, EventArgs e)
         {
-            DPersonasSinHogar personh = new DPersonasSinHogar();
-            personh.Show();
+            PSHdoc donacionpsh = new  PSHdoc();
+            donacionpsh.Show();
         }
     }
 }
