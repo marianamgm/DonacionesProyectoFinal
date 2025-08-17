@@ -58,6 +58,12 @@
     <Compile Include="CategoriasRegistro.Designer.cs">
       <DependentUpon>CategoriasRegistro.cs</DependentUpon>
     </Compile>
+    <Compile Include="DonacionesRegistro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DonacionesRegistro.Designer.cs">
+      <DependentUpon>DonacionesRegistro.cs</DependentUpon>
+    </Compile>
     <Compile Include="Solicitud.cs" />
     <Compile Include="SolicitudControlador.cs" />
     <Compile Include="Conexion.cs" />
@@ -230,6 +236,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DocumentacionRefugios.resx">
       <DependentUpon>DocumentacionRefugios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DonacionesRegistro.resx">
+      <DependentUpon>DonacionesRegistro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DPersonasSinHogar.resx">
       <DependentUpon>DPersonasSinHogar.cs</DependentUpon>
