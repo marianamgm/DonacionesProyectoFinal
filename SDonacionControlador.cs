@@ -5,29 +5,29 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
-using DonacionesProyectoFinal;
 using System.Windows.Forms;
 
 namespace DonacionesProyectoFinal
 {
-    internal class SolicitudControlador
+    internal class SDonacionControlador
     {
-        public bool AgregarSolicitud(Solicitud solicitud)
+        public bool AgregarDonacion(DonacionesMS donaciones)
         {
             try
             {
                 using (SqlConnection conn = new SqlConnection(Conexion.strConexion))
                 {
                     conn.Open();
-                    SqlCommand cmd = new SqlCommand("Ins_Solicitud", conn);
+                    SqlCommand cmd = new SqlCommand("Ins_Donacion", conn);
                     cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("@Nombre", solicitud.Nombre);
-                    cmd.Parameters.AddWithValue("@Email", solicitud.Email);
-                    cmd.Parameters.AddWithValue("@Telefono", solicitud.Telefono);
-                    cmd.Parameters.AddWithValue("@CURP", solicitud.CURP);
-                    cmd.Parameters.AddWithValue("@Direccion", solicitud.Domicilio);
-                    cmd.Parameters.AddWithValue("@Descripcion", solicitud.Descripcion);
-                    cmd.Parameters.AddWithValue("@Categoria", solicitud.Categoria);
+
+                    cmd.Parameters.AddWithValue("@dNombre", donaciones.dNombre);
+                    cmd.Parameters.AddWithValue("@dEmail", donaciones.dEmail);
+                    cmd.Parameters.AddWithValue("@dTelefono", donaciones.dTelefono);
+                    cmd.Parameters.AddWithValue("@dCURP", donaciones.dCURP);
+                    cmd.Parameters.AddWithValue("@dDireccion", donaciones.dDireccion);
+                    cmd.Parameters.AddWithValue("@dDescripcion", donaciones.dDescripcion);
+                    cmd.Parameters.AddWithValue("@dCategoria", donaciones.dCategoria);
 
                     cmd.ExecuteNonQuery();
                 }
@@ -41,24 +41,24 @@ namespace DonacionesProyectoFinal
             }
         }
 
-        public bool ActualizarSolicitud(Solicitud solicitud)
+        public bool ActualizarDonacion(DonacionesMS donaciones)
         {
             try
             {
                 using (SqlConnection conn = new SqlConnection(Conexion.strConexion))
                 {
                     conn.Open();
-                    SqlCommand cmd = new SqlCommand("Act_Solicitud", conn);
+                    SqlCommand cmd = new SqlCommand("Act_Donacion", conn);
                     cmd.CommandType = CommandType.StoredProcedure;
 
-                    cmd.Parameters.AddWithValue("@Id", solicitud.Id);
-                    cmd.Parameters.AddWithValue("@Nombre", solicitud.Nombre);
-                    cmd.Parameters.AddWithValue("@Email", solicitud.Email);
-                    cmd.Parameters.AddWithValue("@Telefono", solicitud.Telefono);
-                    cmd.Parameters.AddWithValue("@CURP", solicitud.CURP);
-                    cmd.Parameters.AddWithValue("@Direccion", solicitud.Domicilio);
-                    cmd.Parameters.AddWithValue("@Descripcion", solicitud.Descripcion);
-                    cmd.Parameters.AddWithValue("@Categoria", solicitud.Categoria);
+                    cmd.Parameters.AddWithValue("@dId", donaciones.dId);
+                    cmd.Parameters.AddWithValue("@dNombre", donaciones.dNombre);
+                    cmd.Parameters.AddWithValue("@dEmail", donaciones.dEmail);
+                    cmd.Parameters.AddWithValue("@dTelefono", donaciones.dTelefono);
+                    cmd.Parameters.AddWithValue("@dCURP", donaciones.dCURP);
+                    cmd.Parameters.AddWithValue("@dDireccion", donaciones.dDireccion);
+                    cmd.Parameters.AddWithValue("@dDescripcion", donaciones.dDescripcion);
+                    cmd.Parameters.AddWithValue("@dCategoria", donaciones.dCategoria);
 
                     cmd.ExecuteNonQuery();
                 }
@@ -71,16 +71,16 @@ namespace DonacionesProyectoFinal
             }
         }
 
-        public bool EliminarSolicitud(int id)
+        public bool EliminarDonacion(int id)
         {
             try
             {
                 using (SqlConnection conn = new SqlConnection(Conexion.strConexion))
                 {
                     conn.Open();
-                    SqlCommand cmd = new SqlCommand("Bor_Solicitud", conn);
+                    SqlCommand cmd = new SqlCommand("Bor_Donacion", conn);
                     cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("@Id", id);
+                    cmd.Parameters.AddWithValue("@dId", id);
 
                     cmd.ExecuteNonQuery();
                 }
@@ -93,15 +93,15 @@ namespace DonacionesProyectoFinal
             }
         }
 
-        public List<Solicitud> ListarSolicitud()
+        public List<DonacionesMS> ListarDonacion()
         {
-            List<Solicitud> lista = new List<Solicitud>();
+            List<DonacionesMS> lista = new List<DonacionesMS>();
             try
             {
                 using (SqlConnection conn = new SqlConnection(Conexion.strConexion))
                 {
                     conn.Open();
-                    SqlCommand cmd = new SqlCommand("Lst_Solicitudes", conn);
+                    SqlCommand cmd = new SqlCommand("Lst_Donaciones", conn);
                     cmd.CommandType = CommandType.StoredProcedure;
 
                     SqlDataAdapter adaptador = new SqlDataAdapter(cmd);
@@ -110,16 +110,16 @@ namespace DonacionesProyectoFinal
 
                     foreach (DataRow row in datos.Rows)
                     {
-                        lista.Add(new Solicitud
+                        lista.Add(new DonacionesMS
                         {
-                            Id = Convert.ToInt32(row["Id"]),
-                            Nombre = row["Nombre"].ToString(),
-                            CURP = row["CURP"].ToString(),
-                            Telefono = row["Telefono"].ToString(),
-                            Email = row["Email"].ToString(),
-                            Domicilio = row["Direccion"].ToString(),
-                            Descripcion = row["Descripcion"].ToString(),
-                            Categoria = row["Categoria"].ToString()
+                            dId = Convert.ToInt32(row["dId"]),
+                            dNombre = row["dNombre"].ToString(),
+                            dCURP = row["dCURP"].ToString(),
+                            dTelefono = row["dTelefono"].ToString(),
+                            dEmail = row["dEmail"].ToString(),
+                            dDireccion = row["dDireccion"].ToString(),
+                            dDescripcion = row["dDescripcion"].ToString(),
+                            dCategoria = row["dCategoria"].ToString()
                         });
                     }
                 }

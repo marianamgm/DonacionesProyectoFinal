@@ -45,7 +45,7 @@ namespace DonacionesProyectoFinal
             if (Grid.Rows.Count > 0)
             {
                 cs_id.Enabled = false;
-                cs_id.Text = Grid[0, e.RowIndex].Value.ToString();
+                cs_id.Text = Grid.Rows[e.RowIndex].Cells[0].Value.ToString();
                 cs_nombre.Text = Grid[1, e.RowIndex].Value.ToString();
                 cs_email.Text = Grid[2, e.RowIndex].Value.ToString();
                 cs_telefono.Text = Grid[3, e.RowIndex].Value.ToString();
@@ -144,6 +144,11 @@ namespace DonacionesProyectoFinal
                     MessageBox.Show("No se pudo eliminar.");
                 }
             }
+        }
+
+        private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
         }
     }
 }

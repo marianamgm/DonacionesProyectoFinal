@@ -60,11 +60,7 @@
             this.telefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.direccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.id_categoria = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.id_producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tipo_usuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.toolStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -83,6 +79,7 @@
             this.toolStrip1.Size = new System.Drawing.Size(811, 31);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
+            this.toolStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStrip1_ItemClicked);
             // 
             // btnNuevo
             // 
@@ -98,7 +95,7 @@
             this.btnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardar.Image")));
             this.btnGuardar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(86, 28);
+            this.btnGuardar.Size = new System.Drawing.Size(86, 24);
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
@@ -107,7 +104,7 @@
             this.btnEliminar.Image = ((System.Drawing.Image)(resources.GetObject("btnEliminar.Image")));
             this.btnEliminar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(87, 28);
+            this.btnEliminar.Size = new System.Drawing.Size(87, 24);
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
@@ -300,11 +297,7 @@
             this.telefono,
             this.descripcion,
             this.direccion,
-            this.fecha,
-            this.id_categoria,
-            this.id_producto,
-            this.tipo_usuario,
-            this.cantidad});
+            this.id_categoria});
             this.Grid.Location = new System.Drawing.Point(23, 225);
             this.Grid.Name = "Grid";
             this.Grid.RowHeadersVisible = false;
@@ -372,14 +365,6 @@
             this.direccion.Name = "direccion";
             this.direccion.Width = 125;
             // 
-            // fecha
-            // 
-            this.fecha.DataPropertyName = "fecha";
-            this.fecha.HeaderText = "Fecha";
-            this.fecha.MinimumWidth = 6;
-            this.fecha.Name = "fecha";
-            this.fecha.Width = 125;
-            // 
             // id_categoria
             // 
             this.id_categoria.DataPropertyName = "id_categoria";
@@ -387,30 +372,6 @@
             this.id_categoria.MinimumWidth = 6;
             this.id_categoria.Name = "id_categoria";
             this.id_categoria.Width = 125;
-            // 
-            // id_producto
-            // 
-            this.id_producto.DataPropertyName = "id_producto";
-            this.id_producto.HeaderText = "Producto";
-            this.id_producto.MinimumWidth = 6;
-            this.id_producto.Name = "id_producto";
-            this.id_producto.Width = 125;
-            // 
-            // tipo_usuario
-            // 
-            this.tipo_usuario.DataPropertyName = "tipo_usuario";
-            this.tipo_usuario.HeaderText = "Tipo";
-            this.tipo_usuario.MinimumWidth = 6;
-            this.tipo_usuario.Name = "tipo_usuario";
-            this.tipo_usuario.Width = 125;
-            // 
-            // cantidad
-            // 
-            this.cantidad.DataPropertyName = "cantidad";
-            this.cantidad.HeaderText = "Detalle";
-            this.cantidad.MinimumWidth = 6;
-            this.cantidad.Name = "cantidad";
-            this.cantidad.Width = 125;
             // 
             // CategoriasRegistro
             // 
@@ -473,10 +434,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn telefono;
         private System.Windows.Forms.DataGridViewTextBoxColumn descripcion;
         private System.Windows.Forms.DataGridViewTextBoxColumn direccion;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fecha;
         private System.Windows.Forms.DataGridViewTextBoxColumn id_categoria;
-        private System.Windows.Forms.DataGridViewTextBoxColumn id_producto;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tipo_usuario;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cantidad;
     }
 }

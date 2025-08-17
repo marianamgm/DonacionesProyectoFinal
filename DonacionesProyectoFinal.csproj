@@ -58,6 +58,8 @@
     <Compile Include="CategoriasRegistro.Designer.cs">
       <DependentUpon>CategoriasRegistro.cs</DependentUpon>
     </Compile>
+    <Compile Include="DonacionesMS.cs" />
+    <Compile Include="SDonacionControlador.cs" />
     <Compile Include="DonacionesRegistro.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -12,6 +12,7 @@ namespace DonacionesProyectoFinal
 {
     public partial class DMadresSolteras : Form
     {
+        SDonacionControlador controlado = new SDonacionControlador();
         public DMadresSolteras()
         {
             InitializeComponent();
@@ -22,5 +23,49 @@ namespace DonacionesProyectoFinal
             MSdoc mSdoc = new MSdoc();
             mSdoc.Show();
         }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+        }
+            
+
+        private void DMadresSolteras_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnGuardar_Click_1(object sender, EventArgs e)
+        {
+            if(tnombrems.Text.Trim() == "" || ttelefonoms.Text.Trim() == "" || temailms.Text.Trim() == "")
+            {
+                MessageBox.Show("Complete todos los campos obligatorios.");
+                return;
+            }
+
+            DonacionesMS donaciones = new DonacionesMS()
+            {
+                dCategoria = "Madres Solteras",
+                dNombre = tnombrems.Text,
+                dTelefono = ttelefonoms.Text,
+                dEmail = temailms.Text,
+                dDireccion = tdireccionms.Text,
+                dCURP = tcurpms.Text,
+                dDescripcion = tdescripcionms.Text
+            };
+
+
+
+            bool guardo = controlado.AgregarDonacion(donaciones);
+
+            if (guardo)
+            {
+                MessageBox.Show("Donacion enviada correctamente.");
+                this.Close();
+            }
+            else
+                MessageBox.Show("No se pudo enviar la solicitud.");
+        }
     }
 }
+    
+

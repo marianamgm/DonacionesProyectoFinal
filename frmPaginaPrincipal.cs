@@ -120,5 +120,11 @@ namespace DonacionesProyectoFinal
         {
             Application.Exit();
         }
+
+        private void donacionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DonacionesRegistro registro = new DonacionesRegistro();
+            registro.Show();
+        }
     }
 }

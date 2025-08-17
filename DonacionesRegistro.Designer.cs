@@ -34,8 +34,6 @@
             this.btnGuardarD = new System.Windows.Forms.ToolStripButton();
             this.btnEliminarD = new System.Windows.Forms.ToolStripButton();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.btnSalir = new System.Windows.Forms.Button();
             this.cd_categoria = new System.Windows.Forms.TextBox();
             this.cd_direccion = new System.Windows.Forms.TextBox();
             this.cd_descripcion = new System.Windows.Forms.TextBox();
@@ -52,6 +50,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnSalir = new System.Windows.Forms.Button();
             this.GridD = new System.Windows.Forms.DataGridView();
             this.dId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -87,6 +87,7 @@
             this.btnNuevoD.Name = "btnNuevoD";
             this.btnNuevoD.Size = new System.Drawing.Size(76, 24);
             this.btnNuevoD.Text = "Nuevo";
+            this.btnNuevoD.Click += new System.EventHandler(this.btnNuevoD_Click);
             // 
             // btnGuardarD
             // 
@@ -95,6 +96,7 @@
             this.btnGuardarD.Name = "btnGuardarD";
             this.btnGuardarD.Size = new System.Drawing.Size(86, 24);
             this.btnGuardarD.Text = "Guardar";
+            this.btnGuardarD.Click += new System.EventHandler(this.btnGuardarD_Click);
             // 
             // btnEliminarD
             // 
@@ -103,6 +105,7 @@
             this.btnEliminarD.Name = "btnEliminarD";
             this.btnEliminarD.Size = new System.Drawing.Size(87, 24);
             this.btnEliminarD.Text = "Eliminar";
+            this.btnEliminarD.Click += new System.EventHandler(this.btnEliminarD_Click);
             // 
             // panel1
             // 
@@ -128,27 +131,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(737, 173);
             this.panel1.TabIndex = 1;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.btnSalir);
-            this.panel2.Location = new System.Drawing.Point(29, 422);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(737, 83);
-            this.panel2.TabIndex = 2;
-            // 
-            // btnSalir
-            // 
-            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnSalir.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalir.Location = new System.Drawing.Point(593, 36);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(91, 36);
-            this.btnSalir.TabIndex = 0;
-            this.btnSalir.Text = "Salir";
-            this.btnSalir.UseVisualStyleBackColor = true;
             // 
             // cd_categoria
             // 
@@ -278,6 +260,28 @@
             this.label1.TabIndex = 18;
             this.label1.Text = "Nombre:";
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.btnSalir);
+            this.panel2.Location = new System.Drawing.Point(29, 422);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(737, 83);
+            this.panel2.TabIndex = 2;
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnSalir.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.Location = new System.Drawing.Point(593, 36);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(91, 36);
+            this.btnSalir.TabIndex = 0;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
             // GridD
             // 
             this.GridD.AllowUserToAddRows = false;
@@ -301,6 +305,7 @@
             this.GridD.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.GridD.Size = new System.Drawing.Size(733, 207);
             this.GridD.TabIndex = 3;
+            this.GridD.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridD_CellContentClick);
             // 
             // dId
             // 
@@ -380,6 +385,7 @@
             this.MinimizeBox = false;
             this.Name = "DonacionesRegistro";
             this.Text = "DonacionesRegistro";
+            this.Load += new System.EventHandler(this.DonacionesRegistro_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);

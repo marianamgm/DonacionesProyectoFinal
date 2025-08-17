@@ -92,7 +92,7 @@
             this.btnNuev.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNuev.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNuev.ForeColor = System.Drawing.Color.White;
-            this.btnNuev.Location = new System.Drawing.Point(348, 293);
+            this.btnNuev.Location = new System.Drawing.Point(189, 296);
             this.btnNuev.Name = "btnNuev";
             this.btnNuev.Size = new System.Drawing.Size(96, 35);
             this.btnNuev.TabIndex = 17;
@@ -120,7 +120,7 @@
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalir.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnSalir.Location = new System.Drawing.Point(194, 295);
+            this.btnSalir.Location = new System.Drawing.Point(325, 296);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(97, 33);
             this.btnSalir.TabIndex = 43;
