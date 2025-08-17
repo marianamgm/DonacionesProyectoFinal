@@ -19,8 +19,8 @@ namespace DonacionesProyectoFinal
                 using (SqlConnection conn = new SqlConnection(Conexion.strConexion))
                 {
                     conn.Open();
-                    SqlCommand cmd = new SqlCommand("Ins_Solicitud", conn);
-                    cmd.CommandType = CommandType.StoredProcedure;
+                SqlCommand cmd = new SqlCommand("Ins_Solicitud", conn);
+                cmd.CommandType = CommandType.StoredProcedure;
 
                     cmd.Parameters.AddWithValue("@Nombre", solicitud.Nombre);
                     cmd.Parameters.AddWithValue("@Email", solicitud.Email);
@@ -30,12 +30,12 @@ namespace DonacionesProyectoFinal
                     cmd.Parameters.AddWithValue("@Descripcion", solicitud.Descripcion);
                     cmd.Parameters.AddWithValue("@Categoria", solicitud.Categoria);
 
-                    cmd.ExecuteNonQuery();
+                cmd.ExecuteNonQuery();
                 }
                 return true;
             }
             catch (Exception ex)
-            {
+            { 
                 MessageBox.Show("Error al agregar: " + ex.Message);
                 return false;
 
@@ -50,7 +50,7 @@ namespace DonacionesProyectoFinal
                 {
                     conn.Open();
                     SqlCommand cmd = new SqlCommand("Act_Solicitud", conn);
-                    cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandType = CommandType.StoredProcedure;
 
                     cmd.Parameters.AddWithValue("@Id", solicitud.Id);
                     cmd.Parameters.AddWithValue("@Nombre", solicitud.Nombre);
@@ -61,7 +61,7 @@ namespace DonacionesProyectoFinal
                     cmd.Parameters.AddWithValue("@Descripcion", solicitud.Descripcion);
                     cmd.Parameters.AddWithValue("@Categoria", solicitud.Categoria);
 
-                    cmd.ExecuteNonQuery();
+                cmd.ExecuteNonQuery();
                 }
                 return true;
             }
@@ -76,14 +76,14 @@ namespace DonacionesProyectoFinal
         {
             try
             {
-                using (SqlConnection conn = new SqlConnection(Conexion.strConexion))
-                {
+                SqlConnection conn = new SqlConnection(Conexion.strConexion);
+                if (conn.State == 0)
                     conn.Open();
                     SqlCommand cmd = new SqlCommand("Bor_Solicitud", conn);
-                    cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandType = CommandType.StoredProcedure;
                     cmd.Parameters.AddWithValue("@Id", id);
 
-                    cmd.ExecuteNonQuery();
+                cmd.ExecuteNonQuery();
                 }
                 return true;
             }
@@ -95,7 +95,7 @@ namespace DonacionesProyectoFinal
         }
 
         public List<Solicitud> ListarSolicitud()
-        {
+        { 
             List<Solicitud> lista = new List<Solicitud>();
             try
             {
@@ -103,11 +103,11 @@ namespace DonacionesProyectoFinal
                 {
                     conn.Open();
                     SqlCommand cmd = new SqlCommand("Lst_Solicitudes", conn);
-                    cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandType = CommandType.StoredProcedure;
 
                     SqlDataAdapter adaptador = new SqlDataAdapter(cmd);
                     DataTable datos = new DataTable();
-                    adaptador.Fill(datos);
+                adaptador.Fill(datos);
 
                     foreach (DataRow row in datos.Rows)
                     {
@@ -124,9 +124,10 @@ namespace DonacionesProyectoFinal
                         });
                     }
                 }
+                return clientes;
             }
             catch (Exception ex)
-            {
+            { 
                 MessageBox.Show("Error al listar: " + ex.Message);
             }
             return lista;
