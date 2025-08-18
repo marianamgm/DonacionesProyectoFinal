@@ -58,6 +58,18 @@
     <Compile Include="CategoriasRegistro.Designer.cs">
       <DependentUpon>CategoriasRegistro.cs</DependentUpon>
     </Compile>
+    <Compile Include="Correo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Correo.Designer.cs">
+      <DependentUpon>Correo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Google.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Google.Designer.cs">
+      <DependentUpon>Google.cs</DependentUpon>
+    </Compile>
     <Compile Include="SAnimalesControlador.cs" />
     <Compile Include="Donaciones.cs" />
     <Compile Include="SDonacionControlador.cs" />
@@ -186,11 +198,20 @@
     <Compile Include="Rdoc.Designer.cs">
       <DependentUpon>Rdoc.cs</DependentUpon>
     </Compile>
+    <Compile Include="Tipo de cuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tipo de cuenta.Designer.cs">
+      <DependentUpon>Tipo de cuenta.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Adoc.resx">
       <DependentUpon>Adoc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CategoriasRegistro.resx">
       <DependentUpon>CategoriasRegistro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Correo.resx">
+      <DependentUpon>Correo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DAnimales.resx">
       <DependentUpon>DAnimales.cs</DependentUpon>
@@ -243,6 +264,9 @@
     <EmbeddedResource Include="frmRefugios.resx">
       <DependentUpon>frmRefugios.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Google.resx">
+      <DependentUpon>Google.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MSdoc.resx">
       <DependentUpon>MSdoc.cs</DependentUpon>
     </EmbeddedResource>
@@ -261,6 +285,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Rdoc.resx">
       <DependentUpon>Rdoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tipo de cuenta.resx">
+      <DependentUpon>Tipo de cuenta.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
