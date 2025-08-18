@@ -22,5 +22,10 @@ namespace DonacionesProyectoFinal
             DAnimales danimal = new DAnimales();
             danimal.Show();
         }
+
+        private void DFRManimalescs_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

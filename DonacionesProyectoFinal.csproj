@@ -58,6 +58,12 @@
     <Compile Include="CategoriasRegistro.Designer.cs">
       <DependentUpon>CategoriasRegistro.cs</DependentUpon>
     </Compile>
+    <Compile Include="Google.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Google.Designer.cs">
+      <DependentUpon>Google.cs</DependentUpon>
+    </Compile>
     <Compile Include="SAnimalesControlador.cs" />
     <Compile Include="Donaciones.cs" />
     <Compile Include="SDonacionControlador.cs" />
@@ -186,6 +192,12 @@
     <Compile Include="Rdoc.Designer.cs">
       <DependentUpon>Rdoc.cs</DependentUpon>
     </Compile>
+    <Compile Include="Tipodecuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tipodecuenta.Designer.cs">
+      <DependentUpon>Tipodecuenta.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Adoc.resx">
       <DependentUpon>Adoc.cs</DependentUpon>
     </EmbeddedResource>
@@ -243,6 +255,9 @@
     <EmbeddedResource Include="frmRefugios.resx">
       <DependentUpon>frmRefugios.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Google.resx">
+      <DependentUpon>Google.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MSdoc.resx">
       <DependentUpon>MSdoc.cs</DependentUpon>
     </EmbeddedResource>
@@ -261,6 +276,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Rdoc.resx">
       <DependentUpon>Rdoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tipodecuenta.resx">
+      <DependentUpon>Tipodecuenta.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -70,6 +70,11 @@ namespace DonacionesProyectoFinal
         {
             this.Close();
         }
+
+        private void Adoc_Load(object sender, EventArgs e)
+        {
+
+        }
     }
     }
 

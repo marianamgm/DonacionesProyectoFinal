@@ -276,6 +276,7 @@
             this.Name = "DocumentacionRefugios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RequisitosRefugios";
+            this.Load += new System.EventHandler(this.DocumentacionRefugios_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

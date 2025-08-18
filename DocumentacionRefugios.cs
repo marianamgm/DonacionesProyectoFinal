@@ -85,6 +85,11 @@ namespace DonacionesProyectoFinal
         {
             this.Close();
         }
+
+        private void DocumentacionRefugios_Load(object sender, EventArgs e)
+        {
+
+        }
     }
     }
     

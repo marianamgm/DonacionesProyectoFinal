@@ -93,6 +93,7 @@
             this.Name = "DFRManimalescs";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DFRManimalescs";
+            this.Load += new System.EventHandler(this.DFRManimalescs_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
