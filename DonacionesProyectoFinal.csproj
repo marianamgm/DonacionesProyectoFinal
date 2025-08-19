@@ -204,6 +204,9 @@
     <EmbeddedResource Include="CategoriasRegistro.resx">
       <DependentUpon>CategoriasRegistro.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Correo.resx">
+      <DependentUpon>Correo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DAnimales.resx">
       <DependentUpon>DAnimales.cs</DependentUpon>
     </EmbeddedResource>
