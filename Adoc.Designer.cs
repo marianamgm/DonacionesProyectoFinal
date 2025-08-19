@@ -167,7 +167,7 @@
             this.adireccion.Name = "adireccion";
             this.adireccion.Size = new System.Drawing.Size(177, 51);
             this.adireccion.TabIndex = 37;
-            this.adireccion.Text = "Colobia/calle/número/cp";
+            this.adireccion.Text = "Colonia/Calle/Número/CP";
             // 
             // aemail
             // 

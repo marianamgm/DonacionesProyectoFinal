@@ -163,7 +163,7 @@
             this.tdireccionms.Name = "tdireccionms";
             this.tdireccionms.Size = new System.Drawing.Size(177, 22);
             this.tdireccionms.TabIndex = 37;
-            this.tdireccionms.Text = "Colobia/calle/número/cp";
+            this.tdireccionms.Text = "Colonia/Calle/Número/CP";
             // 
             // temailms
             // 

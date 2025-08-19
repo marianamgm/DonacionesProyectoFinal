@@ -27,5 +27,11 @@ namespace DonacionesProyectoFinal
         {
 
         }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            frmPaginaPrincipal paginaprins = new frmPaginaPrincipal();
+            paginaprins.Show();
+        }
     }
 }

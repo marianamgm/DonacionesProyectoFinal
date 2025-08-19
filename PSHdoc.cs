@@ -52,6 +52,10 @@ namespace DonacionesProyectoFinal
                 MessageBox.Show("No se pudo enviar la Donación.");
         }
 
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

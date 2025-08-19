@@ -166,7 +166,7 @@
             this.direccionr.Name = "direccionr";
             this.direccionr.Size = new System.Drawing.Size(177, 51);
             this.direccionr.TabIndex = 37;
-            this.direccionr.Text = "Colobia/calle/número/cp";
+            this.direccionr.Text = "Colonia/Calle/Número/CP";
             // 
             // emailr
             // 

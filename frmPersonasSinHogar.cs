@@ -27,5 +27,11 @@ namespace DonacionesProyectoFinal
            DocumentacionPersonasSinHogar docpsh = new DocumentacionPersonasSinHogar();
            docpsh.Show();
         }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            frmPaginaPrincipal paginaprins = new frmPaginaPrincipal();
+            paginaprins.Show();
+        }
     }
 }

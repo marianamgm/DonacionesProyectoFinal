@@ -20,8 +20,7 @@ namespace DonacionesProyectoFinal
 
         private void button2_Click(object sender, EventArgs e)
         {
-            MSdoc mSdoc = new MSdoc();
-            mSdoc.Show();
+            
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)

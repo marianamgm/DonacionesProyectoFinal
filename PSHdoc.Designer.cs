@@ -159,11 +159,11 @@
             // 
             this.dpdir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.dpdir.ForeColor = System.Drawing.Color.DimGray;
-            this.dpdir.Location = new System.Drawing.Point(232, 158);
+            this.dpdir.Location = new System.Drawing.Point(249, 158);
             this.dpdir.Name = "dpdir";
-            this.dpdir.Size = new System.Drawing.Size(242, 22);
+            this.dpdir.Size = new System.Drawing.Size(225, 22);
             this.dpdir.TabIndex = 37;
-            this.dpdir.Text = "Colobia/calle/número/cp";
+            this.dpdir.Text = "Colonia/Calle/Número/CP";
             // 
             // dpemail
             // 
@@ -222,6 +222,7 @@
             this.label5.Size = new System.Drawing.Size(64, 16);
             this.label5.TabIndex = 31;
             this.label5.Text = "Dirección";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label4
             // 

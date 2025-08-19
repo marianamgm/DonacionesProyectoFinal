@@ -10,7 +10,7 @@ namespace DonacionesProyectoFinal
 {
     internal class Donaciones
     {
-        // Propiedades
+      
         public int dId { get; set; }
         public string dNombre { get; set; }
         public string dCURP { get; set; }
@@ -20,12 +20,12 @@ namespace DonacionesProyectoFinal
         public string dDescripcion { get; set; }
         public string dCategoria { get; set; }
 
-        // Constructor vacío
+  
         public Donaciones()
         {
         }
 
-        // Constructor con parámetros
+     
         public Donaciones(int id, string nombre, string curp, string telefono, string email, string direccion, string descripcion, string categoria)
         {
             dId = id;

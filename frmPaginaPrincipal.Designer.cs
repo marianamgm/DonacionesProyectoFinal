@@ -96,8 +96,9 @@
             // editarToolStripMenuItem
             // 
             this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
-            this.editarToolStripMenuItem.Size = new System.Drawing.Size(131, 26);
+            this.editarToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.editarToolStripMenuItem.Text = "Editar";
+            this.editarToolStripMenuItem.Click += new System.EventHandler(this.editarToolStripMenuItem_Click);
             // 
             // categoriasToolStripMenuItem
             // 
@@ -258,7 +259,7 @@
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(221, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(139, 6);
             // 
             // gestionToolStripMenuItem
             // 
@@ -267,25 +268,25 @@
             this.toolStripSeparator8,
             this.donacionesToolStripMenuItem});
             this.gestionToolStripMenuItem.Name = "gestionToolStripMenuItem";
-            this.gestionToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.gestionToolStripMenuItem.Size = new System.Drawing.Size(142, 26);
             this.gestionToolStripMenuItem.Text = "Gestion";
             // 
             // solicitudesToolStripMenuItem
             // 
             this.solicitudesToolStripMenuItem.Name = "solicitudesToolStripMenuItem";
-            this.solicitudesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.solicitudesToolStripMenuItem.Size = new System.Drawing.Size(170, 26);
             this.solicitudesToolStripMenuItem.Text = "Solicitudes";
             this.solicitudesToolStripMenuItem.Click += new System.EventHandler(this.solicitudesToolStripMenuItem_Click);
             // 
             // toolStripSeparator8
             // 
             this.toolStripSeparator8.Name = "toolStripSeparator8";
-            this.toolStripSeparator8.Size = new System.Drawing.Size(221, 6);
+            this.toolStripSeparator8.Size = new System.Drawing.Size(167, 6);
             // 
             // donacionesToolStripMenuItem
             // 
             this.donacionesToolStripMenuItem.Name = "donacionesToolStripMenuItem";
-            this.donacionesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.donacionesToolStripMenuItem.Size = new System.Drawing.Size(170, 26);
             this.donacionesToolStripMenuItem.Text = "Donaciones";
             this.donacionesToolStripMenuItem.Click += new System.EventHandler(this.donacionesToolStripMenuItem_Click);
             // 

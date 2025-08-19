@@ -22,5 +22,16 @@ namespace DonacionesProyectoFinal
             PSHdoc donacionpsh = new  PSHdoc();
             donacionpsh.Show();
         }
+
+        private void DFRMpersonasinhogarcs_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            frmPaginaPrincipal paginaprins = new frmPaginaPrincipal();
+            paginaprins.Show();
+        }
     }
 }

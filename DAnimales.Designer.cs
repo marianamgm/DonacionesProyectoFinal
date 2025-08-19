@@ -161,12 +161,12 @@
             // 
             this.dadireccion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.dadireccion.ForeColor = System.Drawing.Color.DimGray;
-            this.dadireccion.Location = new System.Drawing.Point(257, 158);
+            this.dadireccion.Location = new System.Drawing.Point(277, 158);
             this.dadireccion.Multiline = true;
             this.dadireccion.Name = "dadireccion";
-            this.dadireccion.Size = new System.Drawing.Size(217, 35);
+            this.dadireccion.Size = new System.Drawing.Size(197, 35);
             this.dadireccion.TabIndex = 37;
-            this.dadireccion.Text = "Colobia/calle/número/cp";
+            this.dadireccion.Text = "Colonia/Calle/Número/CP";
             // 
             // daemail
             // 
@@ -174,7 +174,7 @@
             this.daemail.ForeColor = System.Drawing.Color.DimGray;
             this.daemail.Location = new System.Drawing.Point(35, 158);
             this.daemail.Name = "daemail";
-            this.daemail.Size = new System.Drawing.Size(191, 22);
+            this.daemail.Size = new System.Drawing.Size(205, 22);
             this.daemail.TabIndex = 36;
             this.daemail.Text = "Correo electrónico";
             // 
@@ -182,9 +182,9 @@
             // 
             this.datelefono.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.datelefono.ForeColor = System.Drawing.Color.DimGray;
-            this.datelefono.Location = new System.Drawing.Point(249, 93);
+            this.datelefono.Location = new System.Drawing.Point(277, 93);
             this.datelefono.Name = "datelefono";
-            this.datelefono.Size = new System.Drawing.Size(225, 22);
+            this.datelefono.Size = new System.Drawing.Size(197, 22);
             this.datelefono.TabIndex = 35;
             this.datelefono.Text = "10 digitos";
             // 
@@ -194,7 +194,7 @@
             this.dacurp.ForeColor = System.Drawing.Color.DimGray;
             this.dacurp.Location = new System.Drawing.Point(35, 94);
             this.dacurp.Name = "dacurp";
-            this.dacurp.Size = new System.Drawing.Size(191, 22);
+            this.dacurp.Size = new System.Drawing.Size(205, 22);
             this.dacurp.TabIndex = 34;
             this.dacurp.Text = "18 digitos";
             // 
@@ -220,7 +220,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(265, 139);
+            this.label5.Location = new System.Drawing.Point(284, 139);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(64, 16);
             this.label5.TabIndex = 31;
@@ -229,7 +229,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(246, 75);
+            this.label4.Location = new System.Drawing.Point(274, 75);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(61, 16);
             this.label4.TabIndex = 30;

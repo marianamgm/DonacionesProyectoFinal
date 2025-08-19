@@ -61,6 +61,7 @@
             this.dDireccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dDescripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dCategoria = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnListar = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -73,7 +74,8 @@
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnNuevoD,
             this.btnGuardarD,
-            this.btnEliminarD});
+            this.btnEliminarD,
+            this.btnListar});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(800, 27);
@@ -134,28 +136,28 @@
             // 
             // cd_categoria
             // 
-            this.cd_categoria.Location = new System.Drawing.Point(493, 88);
+            this.cd_categoria.Location = new System.Drawing.Point(469, 122);
             this.cd_categoria.Name = "cd_categoria";
             this.cd_categoria.Size = new System.Drawing.Size(170, 22);
             this.cd_categoria.TabIndex = 33;
             // 
             // cd_direccion
             // 
-            this.cd_direccion.Location = new System.Drawing.Point(493, 57);
+            this.cd_direccion.Location = new System.Drawing.Point(469, 91);
             this.cd_direccion.Name = "cd_direccion";
-            this.cd_direccion.Size = new System.Drawing.Size(170, 22);
+            this.cd_direccion.Size = new System.Drawing.Size(243, 22);
             this.cd_direccion.TabIndex = 32;
             // 
             // cd_descripcion
             // 
-            this.cd_descripcion.Location = new System.Drawing.Point(493, 26);
+            this.cd_descripcion.Location = new System.Drawing.Point(469, 60);
             this.cd_descripcion.Name = "cd_descripcion";
-            this.cd_descripcion.Size = new System.Drawing.Size(224, 22);
+            this.cd_descripcion.Size = new System.Drawing.Size(243, 22);
             this.cd_descripcion.TabIndex = 31;
             // 
             // cd_telefono
             // 
-            this.cd_telefono.Location = new System.Drawing.Point(493, 116);
+            this.cd_telefono.Location = new System.Drawing.Point(469, 26);
             this.cd_telefono.Name = "cd_telefono";
             this.cd_telefono.Size = new System.Drawing.Size(170, 22);
             this.cd_telefono.TabIndex = 30;
@@ -183,7 +185,7 @@
             // 
             // cd_id
             // 
-            this.cd_id.Location = new System.Drawing.Point(91, 29);
+            this.cd_id.Location = new System.Drawing.Point(91, 26);
             this.cd_id.Name = "cd_id";
             this.cd_id.Size = new System.Drawing.Size(170, 22);
             this.cd_id.TabIndex = 26;
@@ -191,7 +193,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(405, 90);
+            this.label10.Location = new System.Drawing.Point(386, 122);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(69, 16);
             this.label10.TabIndex = 25;
@@ -200,7 +202,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(392, 29);
+            this.label7.Location = new System.Drawing.Point(373, 60);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(82, 16);
             this.label7.TabIndex = 24;
@@ -209,7 +211,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(407, 60);
+            this.label6.Location = new System.Drawing.Point(388, 91);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(67, 16);
             this.label6.TabIndex = 23;
@@ -218,7 +220,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(415, 119);
+            this.label5.Location = new System.Drawing.Point(391, 29);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(64, 16);
             this.label5.TabIndex = 22;
@@ -245,7 +247,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(54, 26);
+            this.label2.Location = new System.Drawing.Point(54, 32);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(23, 16);
             this.label2.TabIndex = 19;
@@ -371,6 +373,16 @@
             this.dCategoria.Name = "dCategoria";
             this.dCategoria.Width = 130;
             // 
+            // btnListar
+            // 
+            this.btnListar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.btnListar.Image = ((System.Drawing.Image)(resources.GetObject("btnListar.Image")));
+            this.btnListar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnListar.Name = "btnListar";
+            this.btnListar.Size = new System.Drawing.Size(48, 24);
+            this.btnListar.Text = "Listar";
+            this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
+            // 
             // DonacionesRegistro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -431,5 +443,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dDireccion;
         private System.Windows.Forms.DataGridViewTextBoxColumn dDescripcion;
         private System.Windows.Forms.DataGridViewTextBoxColumn dCategoria;
+        private System.Windows.Forms.ToolStripButton btnListar;
     }
 }

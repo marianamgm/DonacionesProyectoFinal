@@ -22,5 +22,11 @@ namespace DonacionesProyectoFinal
             DocumentacionRefugios docref = new DocumentacionRefugios();
             docref.Show();
         }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            frmPaginaPrincipal paginaprins = new frmPaginaPrincipal();
+            paginaprins.Show();
+        }
     }
 }

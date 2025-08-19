@@ -56,6 +56,7 @@ namespace ejemploLogin
 
             Solicitud solicitud = new Solicitud()
             {
+
                 Categoria = "Madres Solteras",
                 Nombre = text_nombrems.Text,
                 Telefono = text_telms.Text,
@@ -64,7 +65,7 @@ namespace ejemploLogin
                 CURP = text_curpms.Text,
                 Descripcion = text_desms.Text
             };
-        
+
 
 
             bool guardo = controlador.AgregarSolicitud(solicitud);
@@ -76,7 +77,11 @@ namespace ejemploLogin
                 this.Close();
             }
             else
+            {
                 MessageBox.Show("No se pudo enviar la solicitud.");
+
+
+            }
         }
 
         private void FMadresSolteras_Load(object sender, EventArgs e)

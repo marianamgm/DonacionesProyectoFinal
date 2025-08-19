@@ -29,9 +29,34 @@ namespace DonacionesProyectoFinal
 
         }
 
+        
+
         private void CategoriasRegistro_Load(object sender, EventArgs e)
         {
 
+        }
+        private void FrmGestionSolicitudes_Load(object sender, EventArgs e)
+        {
+            CargarSolicitudes();  
+        }
+
+        
+        private void CargarSolicitudes()
+        {
+            SolicitudControlador controlador = new SolicitudControlador();
+            var lista = controlador.ListarSolicitud();
+
+            Grid.DataSource = null; 
+            Grid.DataSource = lista.Select(x => new
+            {
+                x.Id,
+                x.Nombre,
+                x.Email,
+                x.CURP,
+                x.Telefono,
+                x.Domicilio,
+                x.Categoria
+            }).ToList();
         }
 
         void llenarGrid()
@@ -149,6 +174,11 @@ namespace DonacionesProyectoFinal
         private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
 
+        }
+
+        private void btnListar_Click(object sender, EventArgs e)
+        {
+            CargarSolicitudes();
         }
     }
 }

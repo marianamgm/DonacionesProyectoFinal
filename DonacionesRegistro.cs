@@ -48,6 +48,31 @@ namespace DonacionesProyectoFinal
             Limpiar();
         }
 
+        private void DonacionRegistro_Load(object sender, EventArgs e)
+        {
+            Limpiar();
+            llenarGrid(); 
+        }
+
+        private void CargarDonacion()
+        {
+            SDonacionControlador controlador = new SDonacionControlador();
+            var lista = controlador.ListarDonacion();
+
+            GridD.DataSource = null;
+            GridD.DataSource = lista.Select(x => new
+            {
+                x.dId,
+                x.dNombre,
+                x.dEmail,
+                x.dCURP,
+                x.dTelefono,
+                x.dDireccion,
+                x.dCategoria
+            }).ToList();
+        }
+
+
         private void GridD_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             if (GridD.Rows.Count > 0)
@@ -82,6 +107,9 @@ namespace DonacionesProyectoFinal
             Limpiar();
         }
 
+        
+
+       
 
         private void btnGuardarD_Click(object sender, EventArgs e)
         {
@@ -144,6 +172,11 @@ namespace DonacionesProyectoFinal
         private void btnSalir_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnListar_Click(object sender, EventArgs e)
+        {
+            CargarDonacion();
         }
     }
 }

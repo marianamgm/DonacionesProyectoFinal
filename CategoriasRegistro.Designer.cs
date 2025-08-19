@@ -33,6 +33,7 @@
             this.btnNuevo = new System.Windows.Forms.ToolStripButton();
             this.btnGuardar = new System.Windows.Forms.ToolStripButton();
             this.btnEliminar = new System.Windows.Forms.ToolStripButton();
+            this.btnListar = new System.Windows.Forms.ToolStripButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.cs_categoria = new System.Windows.Forms.TextBox();
             this.cs_direccion = new System.Windows.Forms.TextBox();
@@ -55,7 +56,6 @@
             this.Grid = new System.Windows.Forms.DataGridView();
             this.id_solicitud = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.curp = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.telefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -73,10 +73,11 @@
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnNuevo,
             this.btnGuardar,
-            this.btnEliminar});
+            this.btnEliminar,
+            this.btnListar});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(811, 31);
+            this.toolStrip1.Size = new System.Drawing.Size(811, 27);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             this.toolStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStrip1_ItemClicked);
@@ -86,7 +87,7 @@
             this.btnNuevo.Image = ((System.Drawing.Image)(resources.GetObject("btnNuevo.Image")));
             this.btnNuevo.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(76, 28);
+            this.btnNuevo.Size = new System.Drawing.Size(76, 24);
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
@@ -107,6 +108,16 @@
             this.btnEliminar.Size = new System.Drawing.Size(87, 24);
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+            // 
+            // btnListar
+            // 
+            this.btnListar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.btnListar.Image = ((System.Drawing.Image)(resources.GetObject("btnListar.Image")));
+            this.btnListar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnListar.Name = "btnListar";
+            this.btnListar.Size = new System.Drawing.Size(48, 24);
+            this.btnListar.Text = "Listar";
+            this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
             // 
             // panel1
             // 
@@ -135,28 +146,28 @@
             // 
             // cs_categoria
             // 
-            this.cs_categoria.Location = new System.Drawing.Point(499, 78);
+            this.cs_categoria.Location = new System.Drawing.Point(530, 112);
             this.cs_categoria.Name = "cs_categoria";
             this.cs_categoria.Size = new System.Drawing.Size(170, 22);
             this.cs_categoria.TabIndex = 17;
             // 
             // cs_direccion
             // 
-            this.cs_direccion.Location = new System.Drawing.Point(499, 47);
+            this.cs_direccion.Location = new System.Drawing.Point(530, 81);
             this.cs_direccion.Name = "cs_direccion";
             this.cs_direccion.Size = new System.Drawing.Size(170, 22);
             this.cs_direccion.TabIndex = 16;
             // 
             // cs_descripcion
             // 
-            this.cs_descripcion.Location = new System.Drawing.Point(499, 16);
+            this.cs_descripcion.Location = new System.Drawing.Point(530, 50);
             this.cs_descripcion.Name = "cs_descripcion";
             this.cs_descripcion.Size = new System.Drawing.Size(224, 22);
             this.cs_descripcion.TabIndex = 15;
             // 
             // cs_telefono
             // 
-            this.cs_telefono.Location = new System.Drawing.Point(499, 106);
+            this.cs_telefono.Location = new System.Drawing.Point(530, 19);
             this.cs_telefono.Name = "cs_telefono";
             this.cs_telefono.Size = new System.Drawing.Size(170, 22);
             this.cs_telefono.TabIndex = 14;
@@ -192,7 +203,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(411, 80);
+            this.label10.Location = new System.Drawing.Point(442, 114);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(69, 16);
             this.label10.TabIndex = 9;
@@ -201,7 +212,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(398, 19);
+            this.label7.Location = new System.Drawing.Point(429, 53);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(82, 16);
             this.label7.TabIndex = 6;
@@ -210,7 +221,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(413, 50);
+            this.label6.Location = new System.Drawing.Point(444, 84);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(67, 16);
             this.label6.TabIndex = 5;
@@ -219,7 +230,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(421, 109);
+            this.label5.Location = new System.Drawing.Point(447, 22);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(64, 16);
             this.label5.TabIndex = 4;
@@ -292,7 +303,6 @@
             this.Grid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.id_solicitud,
             this.nombre,
-            this.email,
             this.curp,
             this.telefono,
             this.descripcion,
@@ -324,14 +334,6 @@
             this.nombre.MinimumWidth = 6;
             this.nombre.Name = "nombre";
             this.nombre.Width = 250;
-            // 
-            // email
-            // 
-            this.email.DataPropertyName = "email";
-            this.email.HeaderText = "Email";
-            this.email.MinimumWidth = 6;
-            this.email.Name = "email";
-            this.email.Width = 200;
             // 
             // curp
             // 
@@ -426,9 +428,9 @@
         private System.Windows.Forms.TextBox cs_nombre;
         private System.Windows.Forms.TextBox cs_id;
         private System.Windows.Forms.DataGridView Grid;
+        private System.Windows.Forms.ToolStripButton btnListar;
         private System.Windows.Forms.DataGridViewTextBoxColumn id_solicitud;
         private System.Windows.Forms.DataGridViewTextBoxColumn nombre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn email;
         private System.Windows.Forms.DataGridViewTextBoxColumn curp;
         private System.Windows.Forms.DataGridViewTextBoxColumn telefono;
         private System.Windows.Forms.DataGridViewTextBoxColumn descripcion;

@@ -163,10 +163,11 @@
             this.direccionr.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.direccionr.ForeColor = System.Drawing.Color.DimGray;
             this.direccionr.Location = new System.Drawing.Point(268, 158);
+            this.direccionr.Multiline = true;
             this.direccionr.Name = "direccionr";
-            this.direccionr.Size = new System.Drawing.Size(177, 22);
+            this.direccionr.Size = new System.Drawing.Size(177, 51);
             this.direccionr.TabIndex = 37;
-            this.direccionr.Text = "Colobia/calle/número/cp";
+            this.direccionr.Text = "Colonia/Calle/Número/CP";
             // 
             // emailr
             // 
@@ -174,7 +175,7 @@
             this.emailr.ForeColor = System.Drawing.Color.DimGray;
             this.emailr.Location = new System.Drawing.Point(35, 158);
             this.emailr.Name = "emailr";
-            this.emailr.Size = new System.Drawing.Size(168, 22);
+            this.emailr.Size = new System.Drawing.Size(213, 22);
             this.emailr.TabIndex = 36;
             this.emailr.Text = "Correo electrónico";
             // 
@@ -194,7 +195,7 @@
             this.curpr.ForeColor = System.Drawing.Color.DimGray;
             this.curpr.Location = new System.Drawing.Point(35, 94);
             this.curpr.Name = "curpr";
-            this.curpr.Size = new System.Drawing.Size(168, 22);
+            this.curpr.Size = new System.Drawing.Size(213, 22);
             this.curpr.TabIndex = 34;
             this.curpr.Text = "18 digitos";
             // 

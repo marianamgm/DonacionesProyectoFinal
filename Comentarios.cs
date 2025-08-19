@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace DonacionesProyectoFinal
 {
-    public partial class MSdoc : Form
+    public partial class Comentarios : Form
     {
-        public MSdoc()
+        public Comentarios()
         {
             InitializeComponent();
-        }
-
-        private void MSdoc_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

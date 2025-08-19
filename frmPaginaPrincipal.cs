@@ -126,5 +126,11 @@ namespace DonacionesProyectoFinal
             DonacionesRegistro registro = new DonacionesRegistro();
             registro.Show();
         }
+
+        private void editarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Perfil per = new Perfil();
+            per.Show();     
+        }
     }
 }

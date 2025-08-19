@@ -140,7 +140,7 @@
             // 
             this.drdescripcion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.drdescripcion.ForeColor = System.Drawing.Color.DimGray;
-            this.drdescripcion.Location = new System.Drawing.Point(35, 215);
+            this.drdescripcion.Location = new System.Drawing.Point(39, 231);
             this.drdescripcion.Multiline = true;
             this.drdescripcion.Name = "drdescripcion";
             this.drdescripcion.Size = new System.Drawing.Size(410, 50);
@@ -150,7 +150,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(32, 196);
+            this.label7.Location = new System.Drawing.Point(36, 212);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(227, 16);
             this.label7.TabIndex = 38;
@@ -160,11 +160,12 @@
             // 
             this.drdireccion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.drdireccion.ForeColor = System.Drawing.Color.DimGray;
-            this.drdireccion.Location = new System.Drawing.Point(268, 158);
+            this.drdireccion.Location = new System.Drawing.Point(261, 158);
+            this.drdireccion.Multiline = true;
             this.drdireccion.Name = "drdireccion";
-            this.drdireccion.Size = new System.Drawing.Size(177, 22);
+            this.drdireccion.Size = new System.Drawing.Size(184, 51);
             this.drdireccion.TabIndex = 37;
-            this.drdireccion.Text = "Colobia/calle/número/cp";
+            this.drdireccion.Text = "Colonia/Calle/Número/CP";
             // 
             // dremail
             // 
@@ -172,7 +173,7 @@
             this.dremail.ForeColor = System.Drawing.Color.DimGray;
             this.dremail.Location = new System.Drawing.Point(35, 158);
             this.dremail.Name = "dremail";
-            this.dremail.Size = new System.Drawing.Size(168, 22);
+            this.dremail.Size = new System.Drawing.Size(198, 22);
             this.dremail.TabIndex = 36;
             this.dremail.Text = "Correo electrónico";
             // 
@@ -192,7 +193,7 @@
             this.drcurp.ForeColor = System.Drawing.Color.DimGray;
             this.drcurp.Location = new System.Drawing.Point(35, 94);
             this.drcurp.Name = "drcurp";
-            this.drcurp.Size = new System.Drawing.Size(168, 22);
+            this.drcurp.Size = new System.Drawing.Size(198, 22);
             this.drcurp.TabIndex = 34;
             this.drcurp.Text = "18 digitos";
             // 
@@ -218,7 +219,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(265, 139);
+            this.label5.Location = new System.Drawing.Point(262, 139);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(64, 16);
             this.label5.TabIndex = 31;

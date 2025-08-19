@@ -167,7 +167,7 @@
             this.text_direccionms.Name = "text_direccionms";
             this.text_direccionms.Size = new System.Drawing.Size(177, 51);
             this.text_direccionms.TabIndex = 37;
-            this.text_direccionms.Text = "Colobia/calle/número/cp";
+            this.text_direccionms.Text = "Colonia/Calle/Número/CP";
             // 
             // text_emailms
             // 
